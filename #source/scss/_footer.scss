@@ -1,0 +1,39 @@
+footer.footer {
+    background: #000;
+    padding: 64px 0;
+
+    p {
+        color: #fff;
+        font-size: 58px;
+        font-family: "univermag";
+        line-height: 100%;
+        margin: 0;
+    }
+
+    ul {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 12px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                img {
+                    width: 48px;
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    img {
+                        filter: drop-shadow(2px 4px 6px #84F7A0);
+                    }
+                }
+            }
+        }
+    }
+}

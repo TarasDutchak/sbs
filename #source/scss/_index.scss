@@ -26,9 +26,10 @@
 
     p {
         color: var(--light-grey);
-        margin-bottom: 56px;
+        margin-bottom: 46px;
         font-size: 14px;
-        max-width: 588px;
+        max-width: 486px;
+        line-height: 135%;
     }
 
     .greenbtn {
@@ -40,8 +41,8 @@
 .herosection__video {
 
     video {
-        width: 200%;
-        transform: translateX(-23%);
+        width: 220%;
+        transform: translateX(-26%);
     }
 }
 
@@ -76,8 +77,8 @@
         bottom: 0;
     }
 
-    h3 {
-        margin-bottom: 56px;
+    h2 {
+        margin-bottom: 62px;
     }
 
     .row {
@@ -97,6 +98,7 @@
     padding: 16px 24px;
     min-height: 145px;
     display: block;
+    cursor: pointer;
 
     p {
         margin: 0;
@@ -195,7 +197,7 @@
     h3 {
         color: #fff;
         line-height: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         text-align: center;
     }
 
@@ -281,7 +283,7 @@
     padding: 100px 0;
 
     h3 {
-        margin-bottom: 10px;
+        margin-bottom: 24px;
         line-height: 1;
     }
 
@@ -331,18 +333,20 @@
         position: relative;
         display: inline-block;
         z-index: 2;
-        font-family: "univermag";
-        font-size: 22px;
+        font-family: "Unbounded", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
         color: #fff;
         padding: 0 14px;
+        text-transform: uppercase;
 
         &::after,
         &::before {
             content: '';
             position: absolute;
-            top: 3px;
-            width: 14px;
-            height: 15px;
+            top: -3px;
+            width: 12px;
+            height: 26px;
         }
 
         &::after {
@@ -438,20 +442,16 @@
 
     .subtitle {
         color: #42795C;
-        font-size: 22px;
-        line-height: 100%;
-        margin-bottom: 20px;
-        font-family: "univermag";
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 8px;
+        font-family: "Unbounded", sans-serif;
         max-width: 100%;
     }
 
-    .title {
-        font-size: 58px;
-        font-family: "univermag";
-        line-height: 90%;
+    h3 {
         color: #fff;
-        margin-bottom: 20px;
-        max-width: 100%;
+        margin-bottom: 24px;
     }
 
     p {
@@ -487,14 +487,27 @@
     background: #000201;
 
     h3 {
-        margin-bottom: 10px;
-        line-height: 100%;
+        margin-bottom: 24px;
+        line-height: 120%;
     }
 
     p {
         max-width: 486px;
         color: var(--light-grey);
         font-size: 14px;
+        margin-bottom: 56px;
+
+        span {
+            color: #42795C;
+        }
+    }
+
+    .subtitle {
+        font-size: 14px;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 24px;
     }
 }
 
@@ -504,28 +517,31 @@
 }
 
 .ideologic__box {
-    min-height: 195px;
+    height: 195px;
     border: 1px solid rgba(#FFF6F1, 0.2);
     background: rgba(#C4C4C4, 0.05);
     text-align: center;
-    padding: 22px 16px 16px 16px;
     margin-bottom: 30px;
     position: relative;
+    cursor: pointer;
 
     .imgwrap {
         margin-bottom: 5px;
 
         img {
-            height: 40px;
+            height: 80px;
+            margin-bottom: 12px;
         }
     }
 
     p.title {
-        margin-bottom: 5px;
-        font-size: 22px;
+        margin-bottom: 0;
+        font-size: 20px;
         line-height: 130%;
         color: #fff;
-        font-family: "univermag";
+        font-family: "Unbounded", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 
     p {
@@ -546,11 +562,66 @@
         border-left: 1px solid rgba(#FFF6F1, 0.2);
         transform: rotate(-45deg);
     }
+
+    .box-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 22px 16px 16px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottbox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: #0a0c0b;
+        padding: 16px;
+        top: 100%;
+        transition: 0.5s;
+
+        p {
+            font-size: 11.5px;
+            color: var(--dark-grey);
+            margin: 0;
+            line-height: 140%;
+        }
+
+        p.title {
+            margin-bottom: 8px;
+            font-family: "Unbounded", sans-serif;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 130%;
+            text-transform: none;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {}
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #42795C;
+            border-radius: 10px;
+        }
+    }
+
+    &:hover {
+        .bottbox {
+            top: 0;
+        }
+    }
 }
 
-.ideologic__boxes {
-    margin-top: -40px;
-}
 
 .formsection {
     padding: 100px 0;
@@ -593,8 +664,8 @@
 
         label {
             margin-bottom: 5px;
-            font-family: "univermag";
-            font-size: 18px;
+            font-family: "Unbounded", sans-serif;
+            font-size: 14px;
             color: var(--dark-grey);
         }
 
@@ -657,8 +728,8 @@
             margin: 0;
             display: block;
             color: #fff;
-            font-size: 18px;
-            font-family: "univermag";
+            font-size: 14px;
+            font-family: "Unbounded", sans-serif;
             cursor: pointer;
 
             &::after {
@@ -704,13 +775,60 @@ html {
     scroll-behavior: inherit !important;
 }
 
+.titleimg {
+    display: inline-block;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+.herosection__info {
+    .subtitle {
+        font-family: "Unbounded", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        max-width: 100%;
+        margin-bottom: 40px;
+
+        span {
+            color: #42795C;
+        }
+    }
+
+    .greenbtn {
+        min-height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.about h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.meanbox {
+    cursor: pointer;
+}
+
+
+
+
 @media(max-width:1399.8px) {
     .commander__info .title {
         font-size: 52px;
     }
+
+    .ideologic__box {
+        height: 210px;
+    }
 }
 
 @media(max-width:1199.8px) {
+    .about h2 {
+        font-size: 36px;
+    }
+
     .herosection__info h1 {
         font-size: 52px;
     }
@@ -752,18 +870,28 @@ html {
         right: -125px;
     }
 
-    .ideologic p {
-        max-width: 300px;
-    }
-
-    .ideologic__boxes {
-        margin-top: -80px;
-    }
-
     .formsection form {
         padding-left: 0;
         margin-top: 30px;
     }
+
+    .titleimg {
+        margin-bottom: 30px;
+    }
+
+    .herosection__info .subtitle {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .about h2 {
+        margin-bottom: 40px;
+    }
+
+    .ideologic__box p.title {
+        font-size: 18px;
+    }
+
 }
 
 @media(max-width:991.8px) {
@@ -812,9 +940,7 @@ html {
         padding: 40px;
     }
 
-    .ideologic__boxes {
-        margin-top: 30px;
-    }
+
 
 
 
@@ -902,6 +1028,22 @@ html {
         padding: 20px;
     }
 
+    .about h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .aboutbox p {
+        font-size: 14px;
+    }
+
+    .commander__info .subtitle {
+        font-size: 16px;
+    }
+
+    .ideologic__box {
+        margin-bottom: 15px;
+    }
 
 
     .about h3,
@@ -948,9 +1090,9 @@ html {
     padding: 24px 24px 30px 24px;
     border: 1px solid #84F7A0;
     position: relative;
-  
 
-   
+
+
 
     &::after {
         content: "";

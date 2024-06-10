@@ -34,6 +34,10 @@ $(document).ready(function(){
         disable: 'mobile'
     });
 
+
+
+    if ($('header').length) {
+
     var prevScrollpos = window.pageYOffset;
 
     /* Get the header element and it's position */
@@ -56,6 +60,7 @@ $(document).ready(function(){
       prevScrollpos = currentScrollPos;
     }
 
+}
 
 
     $('.closety, .tybox .greenbtn').click(function(){

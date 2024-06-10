@@ -27,4 +27,11 @@ $(document).ready(function(){
         $('.header__nav').removeClass('show');
     })
 
+    AOS.init({
+        once: true,
+        duration: 1000,
+        easing: "ease-in-out",
+        disable: 'mobile'
+    });
+
 });

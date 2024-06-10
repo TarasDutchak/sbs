@@ -143,6 +143,26 @@ button.close {
         width: 100%;
     }
 
+    .header__nav {
+        nav {
+            z-index: 10;
+            position: relative;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            margin: 0 auto;
+            opacity: 0.03;
+            position: absolute;
+            width: 100%;
+            height: 300px;
+            background: url('../img/logbig.png') no-repeat center / contain;
+        }
+    }
+
 }
 
 // font-family: "Unbounded", sans-serif;

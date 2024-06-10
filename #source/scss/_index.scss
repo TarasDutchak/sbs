@@ -699,6 +699,10 @@
     display: none;
 }
 
+html {
+    scroll-behavior: inherit !important;
+}
+
 @media(max-width:1399.8px) {
     .commander__info .title {
         font-size: 52px;

@@ -16,5 +16,15 @@ $(document).ready(function(){
         $('.header__nav').removeClass('show');
     });
     
+    $("header.header nav ul").on("click", "a:not(.normallink)", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 80;
+        $('body,html').animate({ scrollTop: top }, 800);
+    });
+
+    $('.header__nav ul li a').click(function(){
+        $('.header__nav').removeClass('show');
+    })
 
 });

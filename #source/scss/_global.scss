@@ -159,8 +159,23 @@ h3 {
     
 }
 
+@media(max-width:1399.8px) {
+    h3 {
+        font-size: 52px;
+    }
+}
 
+@media(max-width:1199.8px) {
+    h3 {
+        font-size: 46px;
+    }
+}
 
+@media(max-width:575.8px) {
+    h3 {
+        font-size: 36px;
+    }
+}
 
 // font-family: "Unbounded", sans-serif;
 // font-family: "univermag";

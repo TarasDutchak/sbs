@@ -9,4 +9,12 @@ $(document).ready(function(){
         "mask": "+ 380 99 999 9999",
     });
 
+    $('.menubtn').click(function(){
+        $('.header__nav').addClass('show');
+    });
+    $('.close').click(function(){
+        $('.header__nav').removeClass('show');
+    });
+    
+
 });

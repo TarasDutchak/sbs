@@ -695,5 +695,221 @@
 
 }
 
+.commanderimgmob {
+    display: none;
+}
+
+@media(max-width:1399.8px) {
+    .commander__info .title {
+        font-size: 52px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .herosection__info h1 {
+        font-size: 52px;
+    }
+
+    .commander__info .title {
+        font-size: 46px;
+    }
+
+    .aboutbox {
+        height: 100%;
+    }
+
+    .about__videosect {
+        margin-top: 100px;
+    }
+
+    .herosection__info h1 {
+        margin-bottom: 30px;
+    }
+
+    .herosection__info p,
+    .about h3 {
+        margin-bottom: 40px;
+    }
+
+    .commander__info p {
+        max-width: 500px;
+    }
+
+    .about {
+        padding: 100px 0;
+    }
+
+    .meanbox {
+        height: 220px;
+    }
+
+    .commander__info .commanderimg {
+        right: -125px;
+    }
+
+    .ideologic p {
+        max-width: 300px;
+    }
+
+    .ideologic__boxes {
+        margin-top: -80px;
+    }
+
+    .formsection form {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .herosection {
+        padding: 60px 0 20px;
+    }
+
+    .herosection__video video {
+        width: 140%;
+        transform: translateX(-13%);
+        margin-top: -40px;
+    }
+
+    .aboutbox {
+        margin-bottom: 20px;
+        height: auto;
+        min-height: 120px;
+    }
+
+    .aboutbox p {
+        font-size: 16px;
+    }
+
+    .meanbox {
+        margin-bottom: 30px;
+    }
+
+    .means {
+        padding-bottom: 20px;
+    }
+
+    .commander__info .commanderimg {
+        display: none;
+    }
+
+    .commanderimgmob {
+        display: block;
+        width: 100%;
+    }
+
+    .commander__info .commander__infoels {
+        padding: 0;
+    }
+
+    .wrapblock {
+        padding: 40px;
+    }
+
+    .ideologic__boxes {
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .commander {
+        padding-bottom: 20px;
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+
+    .herosection__info h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .herosection__info p {
+        margin-bottom: 30px;
+    }
+
+    .herosection__video video {
+        margin: 0;
+    }
+
+    .about .row {
+        margin-left: -12px;
+        margin-right: -12px;
+
+        .col-lg-4 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    .about__videosect {
+        margin-top: 40px;
+    }
+
+    .about__bgel1,
+    .about__bgel2 {
+        display: none;
+    }
+
+    .means {
+        padding-top: 60px;
+    }
+
+    .means p {
+        margin-bottom: 30px;
+    }
+
+    .commander {
+        padding-top: 60px;
+    }
+
+    .wrapblock {
+        padding: 20px;
+    }
+
+    .commander__info .title {
+        font-size: 36px;
+    }
+
+    .commander__info .subtitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .commander__info .greenbtn {
+        max-width: 100%;
+    }
+
+    .formsection .formblock {
+        padding: 20px;
+    }
+
+
+
+    .about h3, .herosection__info p {
+        margin-bottom: 30px;
+    }
+
+    .about,
+    .ideologic,
+    .formsection {
+        padding: 60px 0;
+    }
+
+}
+
 
 // font-family: "univermag";

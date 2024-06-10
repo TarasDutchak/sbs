@@ -37,3 +37,27 @@ footer.footer {
         }
     }
 }
+
+@media(max-width:1199.8px) {
+    footer.footer {
+        padding: 50px 0;
+
+        p {
+            font-size: 46px;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+    footer.footer p {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:575.8px) {
+    footer.footer {
+        p {
+            font-size: 36px;
+        }
+    }
+}

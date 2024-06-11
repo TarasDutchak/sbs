@@ -236,7 +236,7 @@
 
             width: 57px;
             height: 57px;
-            border-left: 1px solid #84F7A0;
+            border-left: 1px solid rgba(132, 247, 160, 0.3);
             background: #111011;
             position: absolute;
             right: -29px;
@@ -258,7 +258,7 @@
         // clip-path: polygon(5% 0, 100% 0%, 100% 100%, 100% 100%, 0 100%, 0% 10%);
         // clip-path: polygon(5% 0, 101% 0%, 101% 101%, 101% 101%, 0 101%, -1% 10%);
         // clip-path: polygon(-1% 0, 96% 0, 101% 9%, 101% 101%, 0 101%, 0% 101%);
-        border: 1px solid #84F7A0;
+        border: 1px solid rgba(132, 247, 160, 0.3);
     }
 
 

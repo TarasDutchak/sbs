@@ -67,11 +67,6 @@ $(document).ready(function(){
         $('.modalwrapper.ty').removeClass('active');
     });
 
-    $('.formsection .greenbtn').click(function(e){
-        e.preventDefault();
-        $('.modalwrapper.ty').addClass('active');
-    })
-
     $(".scrollbtn").on("click", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),

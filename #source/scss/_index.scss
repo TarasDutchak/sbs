@@ -639,6 +639,27 @@
         padding: 50px 40px;
         background: rgba(#84F7A0, 0.03);
         border: 1px solid rgba(#84F7A0, 0.3);
+
+        .elvid {
+            display: inline-block;
+            width: 57px;
+            height: 57px;
+            border-left: 1px solid rgba(132, 247, 160, 0.3);
+            background: #111011;
+            position: absolute;
+            right: -16px;
+            top: -28px;
+            z-index: 5;
+            overflow: hidden;
+            transform: rotate(-45deg);
+
+            img {
+                mix-blend-mode: soft-light;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
     }
 
     h3 {

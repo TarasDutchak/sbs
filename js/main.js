@@ -139,4 +139,16 @@ $(document).ready(function () {
         }
     });
 
+    // language
+    $('.header__language span').click(function(){
+        $('.header__language').toggleClass('active')
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.header__language').length) {
+            $('.header__language').removeClass('active')
+        }
+    });
+
 });

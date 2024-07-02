@@ -75,45 +75,103 @@ $(document).ready(function () {
     });
 
     // form checkboxes
+    // $(document).click(function (event) {
+    //     let $target = $(event.target);
+    //     if (!$target.closest('.imitselectwrapper').length) {
+    //         $('.imitselect__dd').hide();
+    //     }
+    // });
+
+    // $('.imitselect').click(function(){
+    //     $('.imitselect__dd').toggle();
+    // });
+
+    // const checkboxes = document.querySelectorAll('.imitselect__dd input[type="checkbox"]');
+    // const countBlock = document.querySelector('.count');
+    // const chooseText = document.querySelector('.choosetext');
+    // const countSpan = countBlock.querySelector('span');
+    // const ul = document.querySelector('.imitselect__dd ul');
+    // const otherCheckbox = document.getElementById('sp10');
+    // const otherInputBlock = document.querySelector('.otherinp');
+
+    // checkboxes.forEach(checkbox => {
+    //     checkbox.addEventListener('change', function() {
+    //         const checkedCount = document.querySelectorAll('.imitselect__dd input[type="checkbox"]:checked').length;
+
+    //         if (checkedCount > 0) {
+    //             countBlock.style.display = 'block';
+    //             chooseText.classList.add('hidden');
+    //             countSpan.textContent = checkedCount;
+    //         } else {
+    //             countBlock.style.display = 'none';
+    //             chooseText.classList.remove('hidden');
+    //         }
+
+    //         if (this.checked) {
+    //             ul.prepend(this.closest('li'));
+    //         } else {
+    //             const uncheckedItems = Array.from(ul.querySelectorAll('li')).filter(item => !item.querySelector('input').checked);
+    //             uncheckedItems.forEach(item => ul.append(item));
+    //         }
+
+    //         if (otherCheckbox.checked) {
+    //             otherInputBlock.style.display = 'block';
+    //         } else {
+    //             otherInputBlock.style.display = 'none';
+    //         }
+    //     });
+    // });
     $(document).click(function (event) {
         let $target = $(event.target);
         if (!$target.closest('.imitselectwrapper').length) {
             $('.imitselect__dd').hide();
         }
     });
-
+    
     $('.imitselect').click(function(){
         $('.imitselect__dd').toggle();
     });
-
+    
     const checkboxes = document.querySelectorAll('.imitselect__dd input[type="checkbox"]');
     const countBlock = document.querySelector('.count');
     const chooseText = document.querySelector('.choosetext');
     const countSpan = countBlock.querySelector('span');
+    const countI = countBlock.querySelector('i');
     const ul = document.querySelector('.imitselect__dd ul');
     const otherCheckbox = document.getElementById('sp10');
     const otherInputBlock = document.querySelector('.otherinp');
-
+    
+    function getWordForCount(count) {
+        if (count === 1) {
+            return "спеціальність";
+        } else if (count >= 2 && count <= 4) {
+            return "спеціальності";
+        } else {
+            return "спеціальностей";
+        }
+    }
+    
     checkboxes.forEach(checkbox => {
         checkbox.addEventListener('change', function() {
             const checkedCount = document.querySelectorAll('.imitselect__dd input[type="checkbox"]:checked').length;
-
+    
             if (checkedCount > 0) {
                 countBlock.style.display = 'block';
                 chooseText.classList.add('hidden');
                 countSpan.textContent = checkedCount;
+                countI.textContent = getWordForCount(checkedCount);
             } else {
                 countBlock.style.display = 'none';
                 chooseText.classList.remove('hidden');
             }
-
+    
             if (this.checked) {
                 ul.prepend(this.closest('li'));
             } else {
                 const uncheckedItems = Array.from(ul.querySelectorAll('li')).filter(item => !item.querySelector('input').checked);
                 uncheckedItems.forEach(item => ul.append(item));
             }
-
+    
             if (otherCheckbox.checked) {
                 otherInputBlock.style.display = 'block';
             } else {
@@ -121,6 +179,7 @@ $(document).ready(function () {
             }
         });
     });
+    
 
 
     const radioYes = document.getElementById('1');

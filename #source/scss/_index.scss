@@ -194,7 +194,7 @@
     position: relative;
     z-index: 2;
 
-    h3 {
+    h3, h2 {
         color: #fff;
         line-height: 100%;
         margin-bottom: 50px;
@@ -282,7 +282,7 @@
     background: #000201;
     padding: 100px 0;
 
-    h3 {
+    h3, h2 {
         margin-bottom: 24px;
         line-height: 1;
     }
@@ -449,9 +449,17 @@
         max-width: 100%;
     }
 
-    h3 {
+    h3, .titlename {
         color: #fff;
         margin-bottom: 24px;
+    }
+
+    .titlename {
+        font-size: 40px;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 500;
+        line-height: 120%;
+        text-transform: uppercase;
     }
 
     p {
@@ -809,13 +817,6 @@
     }
 
 
-
-
-
-
-
-
-
 }
 
 .commanderimgmob {
@@ -974,6 +975,27 @@ html {
     font-style: normal;
 }
 
+.likeh2 {
+    margin-bottom: 62px;
+
+    h1 {
+        display: inline;
+    }
+}
+
+.commander,
+.ideologic {
+    h2.subtitle {
+        text-transform: none;
+        font-weight: 400;
+    }
+
+    .likeh2 {
+        font-size: 40px;
+        max-width: 100%;
+        color: #42795C;
+    }
+}
 
 
 
@@ -990,8 +1012,26 @@ html {
 }
 
 @media(max-width:1199.8px) {
-    .about h2 {
+    .ideologic .likeh2,
+    .formsection h2 {
         font-size: 36px;
+    }
+
+    .commander__info .titlename {
+        font-size: 36px;
+    }
+
+    .about h2,
+    .likeh2 {
+        font-size: 36px;
+    }
+
+    .likeh2 {
+        margin-bottom: 40px;
+
+        h1 {
+            font-size: 36px;
+        }
     }
 
     .herosection__info h1 {
@@ -1202,6 +1242,25 @@ html {
 }
 
 @media(max-width:575.8px) {
+    .ideologic .likeh2,
+    .formsection h2 {
+        font-size: 24px;
+    }
+
+    .commander__info .titlename {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+
+    .likeh2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
 
     .herosection__info h1 {
         font-size: 40px;

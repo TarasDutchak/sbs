@@ -140,14 +140,14 @@ $(document).ready(function () {
     const ul = document.querySelector('.imitselect__dd ul');
     const otherCheckbox = document.getElementById('sp10');
     const otherInputBlock = document.querySelector('.otherinp');
-    
+
     function getWordForCount(count) {
         if (count === 1) {
-            return "спеціальність";
+            return wl_localize_vars.specialty;
         } else if (count >= 2 && count <= 4) {
-            return "спеціальності";
+            return wl_localize_vars.specialties;
         } else {
-            return "спеціальностей";
+            return wl_localize_vars.specialties_plural;
         }
     }
     

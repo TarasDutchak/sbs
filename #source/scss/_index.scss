@@ -1465,3 +1465,25 @@ html {
 }
 
 // font-family: "univermag";
+
+
+// 17.08
+.imitselect__dd {
+    height: 440px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #42795C;
+        border-radius: 10px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .imitselect__dd {
+        height: 300px;
+    }
+}

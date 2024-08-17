@@ -16,7 +16,7 @@ $(document).ready(function () {
         $('.header__nav').removeClass('show');
     });
 
-    $("header.header nav ul").on("click", "a:not(.normallink)", function (event) {
+    $("header.header nav ul li:not(.normallink)").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 80;
@@ -74,53 +74,6 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: top }, 800);
     });
 
-    // form checkboxes
-    // $(document).click(function (event) {
-    //     let $target = $(event.target);
-    //     if (!$target.closest('.imitselectwrapper').length) {
-    //         $('.imitselect__dd').hide();
-    //     }
-    // });
-
-    // $('.imitselect').click(function(){
-    //     $('.imitselect__dd').toggle();
-    // });
-
-    // const checkboxes = document.querySelectorAll('.imitselect__dd input[type="checkbox"]');
-    // const countBlock = document.querySelector('.count');
-    // const chooseText = document.querySelector('.choosetext');
-    // const countSpan = countBlock.querySelector('span');
-    // const ul = document.querySelector('.imitselect__dd ul');
-    // const otherCheckbox = document.getElementById('sp10');
-    // const otherInputBlock = document.querySelector('.otherinp');
-
-    // checkboxes.forEach(checkbox => {
-    //     checkbox.addEventListener('change', function() {
-    //         const checkedCount = document.querySelectorAll('.imitselect__dd input[type="checkbox"]:checked').length;
-
-    //         if (checkedCount > 0) {
-    //             countBlock.style.display = 'block';
-    //             chooseText.classList.add('hidden');
-    //             countSpan.textContent = checkedCount;
-    //         } else {
-    //             countBlock.style.display = 'none';
-    //             chooseText.classList.remove('hidden');
-    //         }
-
-    //         if (this.checked) {
-    //             ul.prepend(this.closest('li'));
-    //         } else {
-    //             const uncheckedItems = Array.from(ul.querySelectorAll('li')).filter(item => !item.querySelector('input').checked);
-    //             uncheckedItems.forEach(item => ul.append(item));
-    //         }
-
-    //         if (otherCheckbox.checked) {
-    //             otherInputBlock.style.display = 'block';
-    //         } else {
-    //             otherInputBlock.style.display = 'none';
-    //         }
-    //     });
-    // });
     $(document).click(function (event) {
         let $target = $(event.target);
         if (!$target.closest('.imitselectwrapper').length) {
@@ -138,8 +91,16 @@ $(document).ready(function () {
     const countSpan = countBlock.querySelector('span');
     const countI = countBlock.querySelector('i');
     const ul = document.querySelector('.imitselect__dd ul');
-    const otherCheckbox = document.getElementById('sp10');
+    const otherCheckbox = document.getElementById('showother');
     const otherInputBlock = document.querySelector('.otherinp');
+
+
+    const wl_localize_vars = {
+        specialty: 'спеціальність',
+        specialties: 'спеціальності',
+        specialties_plural: 'спеціальностей'
+    };
+
 
     function getWordForCount(count) {
         if (count === 1) {

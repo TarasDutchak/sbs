@@ -85,79 +85,10 @@ $(document).ready(function () {
         $('.imitselect__dd').toggle();
     });
     
-    const checkboxes = document.querySelectorAll('.imitselect__dd input[type="checkbox"]');
-    const countBlock = document.querySelector('.count');
-    const chooseText = document.querySelector('.choosetext');
-    const countSpan = countBlock.querySelector('span');
-    const countI = countBlock.querySelector('i');
-    const ul = document.querySelector('.imitselect__dd ul');
-    const otherCheckbox = document.getElementById('showother');
-    const otherInputBlock = document.querySelector('.otherinp');
 
 
-    const wl_localize_vars = {
-        specialty: 'спеціальність',
-        specialties: 'спеціальності',
-        specialties_plural: 'спеціальностей'
-    };
 
 
-    function getWordForCount(count) {
-        if (count === 1) {
-            return wl_localize_vars.specialty;
-        } else if (count >= 2 && count <= 4) {
-            return wl_localize_vars.specialties;
-        } else {
-            return wl_localize_vars.specialties_plural;
-        }
-    }
-    
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
-            const checkedCount = document.querySelectorAll('.imitselect__dd input[type="checkbox"]:checked').length;
-    
-            if (checkedCount > 0) {
-                countBlock.style.display = 'block';
-                chooseText.classList.add('hidden');
-                countSpan.textContent = checkedCount;
-                countI.textContent = getWordForCount(checkedCount);
-            } else {
-                countBlock.style.display = 'none';
-                chooseText.classList.remove('hidden');
-            }
-    
-            if (this.checked) {
-                ul.prepend(this.closest('li'));
-            } else {
-                const uncheckedItems = Array.from(ul.querySelectorAll('li')).filter(item => !item.querySelector('input').checked);
-                uncheckedItems.forEach(item => ul.append(item));
-            }
-    
-            if (otherCheckbox.checked) {
-                otherInputBlock.style.display = 'block';
-            } else {
-                otherInputBlock.style.display = 'none';
-            }
-        });
-    });
-    
-
-
-    const radioYes = document.getElementById('1');
-    const radioNo = document.getElementById('2');
-    const rankField = document.querySelector('.col-md-6 .inputfield.hidden');
-
-    radioYes.addEventListener('change', function() {
-        if (radioYes.checked) {
-            rankField.classList.remove('hidden');
-        }
-    });
-
-    radioNo.addEventListener('change', function() {
-        if (radioNo.checked) {
-            rankField.classList.add('hidden');
-        }
-    });
 
     // language
     $('.header__language span').click(function(){
@@ -171,4 +102,17 @@ $(document).ready(function () {
         }
     });
 
+    // -------------------------------------------------
+     // styled selects
+     if ($('select').length) {
+        $('.styledselect').select2({
+            // placeholder: "Project Type*",
+            minimumResultsForSearch: Infinity,
+        });
+    }
+
+    $('.nextbtn .greenbtn:not(.submit-btn)').click(function(e){
+        e.preventDefault();
+        $(this).parents('.formstep').next('.formstep').removeClass('hide');
+    })
 });

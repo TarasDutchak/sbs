@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/plyr.css" />
     <link rel="stylesheet" href="css/lib/aos.css" />
+    <link rel="stylesheet" href="css/lib/select2.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -404,6 +405,13 @@
                 </div>
             </section>
 
+
+
+
+
+
+
+
             <section class="formsection" id="55">
                 <img class="aboutbg" src="img/test.png" alt="">
                 <div class="container">
@@ -419,251 +427,455 @@
                             </div>
                             <div class="col-xl-8">
                                 <form action="#">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="name">Прізвище та імʼя *</label>
-                                                <input type="text" id="name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="date">Дата народження*</label>
-                                                <input type="text" id="date" class="date" placeholder="__ /__/ ____">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="tel">Номер телефону *</label>
-                                                <input type="text" id="tel" class="tel" placeholder="+ 380 __ ___ ____">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="mailinf">Електронна пошта або месенджер *</label>
-                                                <input type="text" id="mailinf">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="addr1">Місто фактичного проживання*</label>
-                                                <input type="text" id="addr1">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="study">Освіта, спеціальність *</label>
-                                                <input type="text" id="study">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="skills">Професійні навички (скіли)*</label>
-                                                <input type="text" id="skills">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="prof1">Остання цивільна посада*</label>
-                                                <input type="text" id="prof1">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="health">
-                                                    Чи наявні у вас критичні проблеми зі здоров'ям? *
-                                                </label>
-                                                <input type="text" id="health">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="militarydoc">
-                                                    Наявність водійського посвідчення. Якщо так - які категорії? *
-                                                </label>
-                                                <input type="text" id="militarydoc">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield">
-                                                <label for="">
-                                                    Чи перебуваєте Ви в лавах ЗСУ або Сил оборони України? *
-                                                </label>
-                                                <div class="radiowrap">
-                                                    <div class="radiobox">
-                                                        <input type="radio" id="1" name="radio">
-                                                        <label for="1">Так</label>
+                                    <div class="formstep">
+                                        <p class="title active">
+                                            Особиста інформація
+                                        </p>
+                                        <div class="formstep__wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="name">Прізвище *</label>
+                                                        <input type="text" id="name">
                                                     </div>
-                                                    <div class="radiobox">
-                                                        <input type="radio" id="2" name="radio">
-                                                        <label for="2">Ні</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="sname">Ім'я *</label>
+                                                        <input type="text" id="sname">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="ipn">Індивідуальний податковий номер (ІПН)</label>
+                                                        <input type="text" id="ipn">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Чи є судимість або відкриті судові провадженння? *
+                                                        </label>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="r1" name="radio">
+                                                                <label for="r1">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="r2" name="radio">
+                                                                <label for="r2">Ні</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Мова спілкування
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Оберіть мову">
+                                                                <option></option>
+                                                                <option value="1">Українська</option>
+                                                                <option value="2">Українська</option>
+                                                                <option value="5">Українська</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="inputfield hidden">
-                                                <label for="zvannia">Яке військове звання? *</label>
-                                                <input type="text" id="zvannia">
+                                            <div class="nextbtn">
+                                                <button class="greenbtn btnel">
+                                                    <span>Далі</span>
+                                                </button>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="inputfield">
-                                                <label for="">
-                                                    Яка спеціальність для вас пріоритетна для майбутньої служби?*
-                                                </label>
-                                                <div class="imitselectwrapper">
-                                                    <div class="imitselect">
-                                                        <p class="choosetext">Оберіть спеціальність</p>
-                                                        <p class="count">Вибрано <span></span> <i>спеціальності</i></p>
-                                                    </div>
-                                                    <div class="imitselect__dd">
-                                                        <ul>
-                                                            <li>
-                                                                <input type="checkbox" id="sp1">
-                                                                <label for="sp1">Оператор БПЛА мультироторного
-                                                                    типу</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp2">
-                                                                <label for="sp2">Оператор БПЛА літакового типу</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp3">
-                                                                <label for="sp3">Оператор безпілотних наземних
-                                                                    систем</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp4">
-                                                                <label for="sp4">Оператор безпілотних надводних
-                                                                    систем</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp5">
-                                                                <label for="sp5">Помічник оператора</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp6">
-                                                                <label for="sp6">Інженер-вибухотехнік</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp7">
-                                                                <label for="sp7">Оператор звʼязку</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp8">
-                                                                <label for="sp8">Механік-водій</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp9">
-                                                                <label for="sp9">Медик</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="showother">
-                                                                <label for="showother">Інше1</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp11">
-                                                                <label for="sp11">Інше2</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp12">
-                                                                <label for="sp12">Інше3</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp13">
-                                                                <label for="sp13">Інше4</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp14">
-                                                                <label for="sp14">Інше5</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp15">
-                                                                <label for="sp15">Інше6</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp16">
-                                                                <label for="sp16">Інше7</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp17">
-                                                                <label for="sp17">Інше8</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp18">
-                                                                <label for="sp18">Інше9</label>
-                                                            </li>
-                                                            <li>
-                                                                <input type="checkbox" id="sp19">
-                                                                <label for="sp19">Інше10</label>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="inputfield">
-                                                <label for="bpla">
-                                                    Чи маєте досвід з БПЛА (якщо так, який саме?) *
-                                                </label>
-                                                <input type="text" id="bpla">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="inputfield otherinp">
-                                                <label for="other">Інше</label>
-                                                <input type="text" id="other">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="inputfield">
-                                                <label for="">
-                                                    Ви погоджуєтесь на обробку персональних даних для використання в
-                                                    цілях рекрутингу Сил Безпілотних Систем? (Інформація НЕ буде
-                                                    передана до ТЦК та СП) *
-                                                </label>
-                                                <div class="radiowrap">
-                                                    <div class="radiobox">
-                                                        <input type="radio" id="t1" name="radio">
-                                                        <label for="t1">Так</label>
-                                                    </div>
-                                                    <div class="radiobox">
-                                                        <input type="radio" id="t2" name="radio">
-                                                        <label for="t2">Ні</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p>sdsdf</p>
-                                        </div>
-                                        <div>
-                                            <p>sdsdf</p>
-                                        </div>
-                                        <div>
-                                            <p>sdsdf</p>
-                                        </div>
-                                        <div>
-                                            <p>sdsdf</p>
-                                        </div>
-                                        <div>
-                                            <p>sdsdf</p>
-                                        </div>
-
-                                        <div>
-                                            <p>sdsdf</p>
-                                        </div>
-                                        <div>
-                                            <p>sdsdf</p>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <button type="submit" class="greenbtn btnel">
-                                                <span>Подати заявку</span>
-                                            </button>
                                         </div>
                                     </div>
+
+                                    <div class="formstep hide">
+                                        <p class="title">
+                                            Адреси
+                                        </p>
+                                        <div class="formstep__wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Область проживання *
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть область">
+                                                                <option></option>
+                                                                <option value="1">Київська</option>
+                                                                <option value="2">Івано-Франківська</option>
+                                                                <option value="3">Херсонська</option>
+                                                                <option value="3">Сумська</option>
+                                                                <option value="3">Одеська</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Місто проживання *
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть місто">
+                                                                <option></option>
+                                                                <option value="1">Київ</option>
+                                                                <option value="2">Івано-Франківська</option>
+                                                                <option value="3">Підгайчики</option>
+                                                                <option value="3">Кути</option>
+                                                                <option value="3">Білгород-Дністровський</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <label for="addr1">Адреса проживання</label>
+                                                        <input type="text" id="addr1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Чи маєте статус Внутрішньо Переміщеної Особи (ВПО)? *
+                                                        </label>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="vpo1" name="vpo">
+                                                                <label for="vpo1">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="vpo2" name="vpo">
+                                                                <label for="vpo2">Ні</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Область реєстрації *
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть область">
+                                                                <option></option>
+                                                                <option value="1">Київська</option>
+                                                                <option value="2">Івано-Франківська</option>
+                                                                <option value="3">Херсонська</option>
+                                                                <option value="3">Сумська</option>
+                                                                <option value="3">Одеська</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Місто реєстрації *
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть місто">
+                                                                <option></option>
+                                                                <option value="1">Київ</option>
+                                                                <option value="2">Івано-Франківська</option>
+                                                                <option value="3">Підгайчики</option>
+                                                                <option value="4">Кути</option>
+                                                                <option value="5">Білгород-Дністровський</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <label for="addr2">Адреса реєстрації *</label>
+                                                        <input type="text" id="addr2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nextbtn">
+                                                <button class="greenbtn btnel">
+                                                    <span>Далі</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="formstep hide">
+                                        <p class="title">
+                                            Засоби зв’язку
+                                        </p>
+                                        <div class="formstep__wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="tel">Номер телефону</label>
+                                                        <input type="text" id="tel" class="tel"
+                                                            placeholder="+ 380 __ ___ ____" inputmode="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="mailinf">Email</label>
+                                                        <input type="text" id="mailinf">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="soc1">Facebook</label>
+                                                        <input type="text" id="soc1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="soc2">Instagram</label>
+                                                        <input type="text" id="soc2">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="soc3">LinkedIn</label>
+                                                        <input type="text" id="soc3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nextbtn">
+                                                <button class="greenbtn btnel">
+                                                    <span>Далі</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="formstep hide">
+                                        <p class="title">
+                                            Освіта та навички
+                                        </p>
+                                        <div class="formstep__wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Рівень освіти *
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть рівень освіти">
+                                                                <option></option>
+                                                                <option value="1">Магістр</option>
+                                                                <option value="2">Бакалавр</option>
+                                                                <option value="3">Середня</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="osv1">Спеціальність *</label>
+                                                        <input type="text" id="osv1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="osv2">Професійні навички (скіли) *</label>
+                                                        <input type="text" id="osv2">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="osv3">Остання цивільна посада</label>
+                                                        <input type="text" id="osv3">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 ml-auto">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Категорія водійського посвідчення
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть категорії">
+                                                                <option></option>
+                                                                <option value="1">A</option>
+                                                                <option value="2">B</option>
+                                                                <option value="3">C</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nextbtn">
+                                                <button class="greenbtn btnel">
+                                                    <span>Далі</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="formstep hide">
+                                        <p class="title">
+                                            Військово-облікові дані
+                                        </p>
+                                        <div class="formstep__wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Ви діючий війсковослужбовий? *
+                                                        </label>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="v1" name="mil1">
+                                                                <label for="v1">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="v2" name="mil1">
+                                                                <label for="v2">Ні</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Ви є офіцером запасу? *
+                                                        </label>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="v3" name="mil2">
+                                                                <label for="v3">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="v4" name="mil2">
+                                                                <label for="v4">Ні</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="stat">Військове звання</label>
+                                                        <input type="text" id="stat">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Є дозвіл на переведення?
+                                                        </label>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="v5" name="mil3">
+                                                                <label for="v5">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="v6" name="mil3">
+                                                                <label for="v6">Ні</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Чи маєте ви спец.звання (ДСНС, Поліція, тощо)?
+                                                        </label>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="v7" name="mil4">
+                                                                <label for="v7">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="v8" name="mil4">
+                                                                <label for="v8">Ні</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="stat1">Військове звання</label>
+                                                        <input type="text" id="stat1">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="nextbtn">
+                                                <button class="greenbtn btnel">
+                                                    <span>Далі</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="formstep hide">
+                                        <p class="title">
+                                            Інформація про здоров’я
+                                        </p>
+                                        <div class="formstep__wrapper">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Є критичні захворювання? *
+                                                        </label>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="hv1" name="hv1">
+                                                                <label for="hv1">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="hv2" name="hv1">
+                                                                <label for="hv2">Ні</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <label for="det1">Деталі про здоров'я *</label>
+                                                        <input type="text" id="det1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Ви погоджуєтесь на обробку персональних даних для
+                                                            використання в
+                                                            цілях рекрутингу Сил Безпілотних Систем? (Інформація НЕ буде
+                                                            передана до ТЦК та СП) *
+                                                        </label>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="hv3" name="hv2">
+                                                                <label for="hv3">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="hv4" name="hv2">
+                                                                <label for="hv4">Ні</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="nextbtn">
+                                                <button type="submit" class="greenbtn btnel submit-btn">
+                                                    <span>Подати заявку</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </form>
                             </div>
                         </div>
@@ -674,6 +886,12 @@
 
                 </div>
             </section>
+
+
+
+
+
+
         </main>
 
         <footer class="footer">
@@ -732,6 +950,7 @@
     <script src="js/lib/plyr.js"></script>
     <script src="js/lib/jquery.inputmask.min.js"></script>
     <script src="js/lib/aos.js"></script>
+    <script src="js/lib/select2.js"></script>
     <script src="js/main.js"></script>
 
 </body>

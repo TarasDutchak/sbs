@@ -194,7 +194,8 @@
     position: relative;
     z-index: 2;
 
-    h3, h2 {
+    h3,
+    h2 {
         color: #fff;
         line-height: 100%;
         margin-bottom: 50px;
@@ -282,7 +283,8 @@
     background: #000201;
     padding: 100px 0;
 
-    h3, h2 {
+    h3,
+    h2 {
         margin-bottom: 24px;
         line-height: 1;
     }
@@ -449,7 +451,8 @@
         max-width: 100%;
     }
 
-    h3, .titlename {
+    h3,
+    .titlename {
         color: #fff;
         margin-bottom: 24px;
     }
@@ -690,7 +693,7 @@
     }
 
     .inputfield {
-        margin-bottom: 30px;
+        margin-bottom: 32px;
 
         label {
             margin-bottom: 5px;
@@ -1012,6 +1015,7 @@ html {
 }
 
 @media(max-width:1199.8px) {
+
     .ideologic .likeh2,
     .formsection h2 {
         font-size: 36px;
@@ -1154,9 +1158,9 @@ html {
             &>div {
                 @for $i from 1 through 13 {
                     &:nth-child(#{$i}) {
-                      order: $i;
+                        order: $i;
                     }
-                  }
+                }
 
                 &:nth-child(14) {
                     order: 15;
@@ -1168,14 +1172,16 @@ html {
 
                 @for $i from 16 through 30 {
                     &:nth-child(#{$i}) {
-                      order: $i;
+                        order: $i;
                     }
-                  }
+                }
             }
         }
     }
 
-
+    .formsection .greenbtn {
+        margin-bottom: 20px;
+    }
 
 
 
@@ -1194,6 +1200,7 @@ html {
 }
 
 @media(max-width:575.8px) {
+
     .ideologic .likeh2,
     .formsection h2 {
         font-size: 24px;
@@ -1438,4 +1445,152 @@ html {
     .imitselect__dd {
         height: 300px;
     }
+}
+
+// form
+.formblock {
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    // formtitlearrow
+}
+
+.formsection {
+    margin-bottom: 0;
+
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-container--default .select2-selection--single {
+        border-radius: 0;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(241, 241, 241, 0.4);
+        height: 36px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 36px;
+        padding-left: 0;
+        color: #fff;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__placeholder {
+        color: rgba(135, 135, 135, 1);
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        background: url(../img/selectarrow.svg) no-repeat center / 100%;
+        height: 36px;
+
+        b {
+            display: none;
+        }
+    }
+
+
+    .nextbtn {
+        text-align: right;
+        margin-top: 15px;
+
+        .greenbtn {
+            display: inline-flex;
+        }
+    }
+}
+
+.select2-dropdown {
+    background-color: #141715;
+    border: 1px solid rgba(241, 241, 241, 0.4);
+
+}
+
+.select2-results__option--selectable {
+    color: #fff;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #fff;
+    color: #141715;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: #2e2e2e;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {}
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #42795C;
+        border-radius: 10px;
+    }
+}
+
+.formstep {
+    margin-bottom: 32px;
+
+    .title {
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-left: 32px;
+        font-family: "Unbounded", sans-serif;
+        margin-bottom: 32px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: #42795C;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url('../img/formtitlearrow.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 12px;
+            transition: 0.5s;
+        }
+
+        &.active {
+            &::after {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}
+
+.aboutbg {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.formstep {
+    &.hide {
+        .formstep__wrapper {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .formstep .title {
+        font-size: 14px;
+    }
+
+    .formsection .inputfield {
+        margin-bottom: 30px;
+    }
+
 }

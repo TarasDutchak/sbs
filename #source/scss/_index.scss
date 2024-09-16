@@ -1639,6 +1639,7 @@ html {
     align-items: center;
     cursor: pointer;
     position: relative;
+    transition: 0.3;
 
     p {
         margin: 0;
@@ -1679,6 +1680,8 @@ html {
     }
 
     &:hover {
+        background: #0E1A11;
+
         button {
             background: rgba(132, 247, 160, 0.3);
         }
@@ -1708,20 +1711,25 @@ html {
 .faqrow {
     background: #0A0A0A;
     border: 1px solid #676462;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     position: relative;
+    transition: 0.3s;
 
     &::after {
         content: '';
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         background: #131113;
         position: absolute;
-        right: -10.5px;
-        top: -10px;
+        right: -8px;
+        top: -8px;
         transform: rotate(45deg);
         border-bottom: 1px solid #676462;
+    }
+
+    &:hover {
+        // background: #0E1A11;
     }
 }
 
@@ -1730,6 +1738,8 @@ html {
     color: #fff;
     font-size: 16px;
     display: none;
+
+    
 }
 
 .faqsection.faqpage {
@@ -1758,13 +1768,19 @@ html {
             margin-bottom: 8px;
 
             a {
-                color: rgba(66, 121, 92, 1);
+                color: rgba(132, 247, 160, 1);
                 font-size: 14px;
                 font-weight: 500;
                 font-family: "Unbounded", sans-serif;
                 position: relative;
                 padding-left: 33px;
                 display: block;
+                opacity: 0.7;
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 1;
+                }
 
                 &::after {
                     content: '';

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 65,
+            "activePatchIndex": 82,
             "patches": [
                 {
                     "date": 1723879486438,
@@ -268,6 +268,74 @@
                 {
                     "date": 1726219276438,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1588,6 +1588,9 @@\n     .formstep .title {\r\n         font-size: 14px;\r\n     }\r\n \r\n+    .formsection .inputfield {\r\n+        margin-bottom: 30px;\r\n+    }\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489618185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1582,8 +1582,11 @@\n         }\r\n     }\r\n }\r\n \r\n+.formsection {\r\n+    overflow: hidden;\r\n+}\r\n @media(max-width:575.8px) {\r\n \r\n     .formstep .title {\r\n         font-size: 14px;\r\n"
+                },
+                {
+                    "date": 1726489634706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1585,8 +1585,9 @@\n \r\n .formsection {\r\n     overflow: hidden;\r\n }\r\n+\r\n @media(max-width:575.8px) {\r\n \r\n     .formstep .title {\r\n         font-size: 14px;\r\n@@ -1595,5 +1596,9 @@\n     .formsection .inputfield {\r\n         margin-bottom: 30px;\r\n     }\r\n \r\n+}\r\n+\r\n+.faqsection {\r\n+    padding: 100px 0;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489657070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1600,5 +1600,12 @@\n }\r\n \r\n .faqsection {\r\n     padding: 100px 0;\r\n+    background: #131113;\r\n+\r\n+    .faqsection__left {\r\n+        .title {\r\n+            \r\n+        }\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489718184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1601,11 +1601,15 @@\n \r\n .faqsection {\r\n     padding: 100px 0;\r\n     background: #131113;\r\n+}\r\n \r\n-    .faqsection__left {\r\n-        .title {\r\n-            \r\n-        }\r\n+.faqsection__left {\r\n+    .title {\r\n+        color: #fff;\r\n+        font-size: 32px;\r\n+        font-family: \"Unbounded\", sans-serif;\r\n+        font-weight: 500;\r\n+        text-transform: uppercase;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489732050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1610,6 +1610,8 @@\n         font-size: 32px;\r\n         font-family: \"Unbounded\", sans-serif;\r\n         font-weight: 500;\r\n         text-transform: uppercase;\r\n+        margin-bottom: 30px;\r\n+        line-height: 120%;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489843313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1613,5 +1613,13 @@\n         text-transform: uppercase;\r\n         margin-bottom: 30px;\r\n         line-height: 120%;\r\n     }\r\n+}\r\n+\r\n+.faqhead {\r\n+    button {\r\n+        border: none;\r\n+        padding: 0;\r\n+        background: transparent;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489853829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1620,6 +1620,8 @@\n     button {\r\n         border: none;\r\n         padding: 0;\r\n         background: transparent;\r\n+        width: 32px;\r\n+        height: 32px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489901283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1622,6 +1622,38 @@\n         padding: 0;\r\n         background: transparent;\r\n         width: 32px;\r\n         height: 32px;\r\n+\r\n+        &::after {\r\n+            content: \"\";\r\n+            position: absolute;\r\n+            display: inline-block;\r\n+            width: 6px;\r\n+            height: 6px;\r\n+            border-top: 1px solid rgb(132, 247, 160);\r\n+            border-left: 1px solid rgb(132, 247, 160);\r\n+            left: -5px;\r\n+            top: -5px;\r\n+            -webkit-transition: 0.3s;\r\n+            transition: 0.3s;\r\n+            -webkit-animation-timing-function: ease-in-out;\r\n+            animation-timing-function: ease-in-out;\r\n+        }\r\n+\r\n+        &::before {\r\n+            content: \"\";\r\n+            position: absolute;\r\n+            display: inline-block;\r\n+            width: 6px;\r\n+            height: 6px;\r\n+            border-bottom: 1px solid rgb(132, 247, 160);\r\n+            border-left: 1px solid rgb(132, 247, 160);\r\n+            bottom: -5px;\r\n+            left: -5px;\r\n+            -webkit-transition: 0.3s;\r\n+            transition: 0.3s;\r\n+            -webkit-animation-timing-function: ease-in-out;\r\n+            animation-timing-function: ease-in-out;\r\n+        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489930527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1623,37 +1623,6 @@\n         background: transparent;\r\n         width: 32px;\r\n         height: 32px;\r\n \r\n-        &::after {\r\n-            content: \"\";\r\n-            position: absolute;\r\n-            display: inline-block;\r\n-            width: 6px;\r\n-            height: 6px;\r\n-            border-top: 1px solid rgb(132, 247, 160);\r\n-            border-left: 1px solid rgb(132, 247, 160);\r\n-            left: -5px;\r\n-            top: -5px;\r\n-            -webkit-transition: 0.3s;\r\n-            transition: 0.3s;\r\n-            -webkit-animation-timing-function: ease-in-out;\r\n-            animation-timing-function: ease-in-out;\r\n-        }\r\n-\r\n-        &::before {\r\n-            content: \"\";\r\n-            position: absolute;\r\n-            display: inline-block;\r\n-            width: 6px;\r\n-            height: 6px;\r\n-            border-bottom: 1px solid rgb(132, 247, 160);\r\n-            border-left: 1px solid rgb(132, 247, 160);\r\n-            bottom: -5px;\r\n-            left: -5px;\r\n-            -webkit-transition: 0.3s;\r\n-            transition: 0.3s;\r\n-            -webkit-animation-timing-function: ease-in-out;\r\n-            animation-timing-function: ease-in-out;\r\n-        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726489986620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1620,9 +1620,8 @@\n     button {\r\n         border: none;\r\n         padding: 0;\r\n         background: transparent;\r\n-        width: 32px;\r\n-        height: 32px;\r\n-\r\n+        width: 24px;\r\n+        height: 24px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490016016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1623,5 +1623,9 @@\n         background: transparent;\r\n         width: 24px;\r\n         height: 24px;\r\n     }\r\n+}\r\n+\r\n+.faqrow {\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490056722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1626,6 +1626,8 @@\n     }\r\n }\r\n \r\n .faqrow {\r\n-    \r\n+    padding: 50px 40px;\r\n+    background: #0A0A0A;\r\n+    border: 1px solid rgba(132, 247, 160, 0.3);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490074751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1628,6 +1628,6 @@\n \r\n .faqrow {\r\n     padding: 50px 40px;\r\n     background: #0A0A0A;\r\n-    border: 1px solid rgba(132, 247, 160, 0.3);\r\n+    border: 1px solid #676462;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490096486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1616,8 +1616,9 @@\n     }\r\n }\r\n \r\n .faqhead {\r\n+    min-height: 72px;\r\n     button {\r\n         border: none;\r\n         padding: 0;\r\n         background: transparent;\r\n"
+                },
+                {
+                    "date": 1726490107274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1617,8 +1617,11 @@\n }\r\n \r\n .faqhead {\r\n     min-height: 72px;\r\n+    padding: 10px 20px;\r\n+    display: flex;\r\n+    align-items: center;\r\n     button {\r\n         border: none;\r\n         padding: 0;\r\n         background: transparent;\r\n"
+                },
+                {
+                    "date": 1726490116739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1620,9 +1620,9 @@\n     min-height: 72px;\r\n     padding: 10px 20px;\r\n     display: flex;\r\n     align-items: center;\r\n-    \r\n+\r\n     button {\r\n         border: none;\r\n         padding: 0;\r\n         background: transparent;\r\n@@ -1631,8 +1631,7 @@\n     }\r\n }\r\n \r\n .faqrow {\r\n-    padding: 50px 40px;\r\n     background: #0A0A0A;\r\n     border: 1px solid #676462;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490408414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1641,12 +1641,13 @@\n         width: 24px;\r\n         height: 24px;\r\n         position: absolute;\r\n         right: 20px;\r\n-        transition: 0.5s;\r\n+       \r\n \r\n         img {\r\n             max-width: 100%;\r\n+            transition: 0.5s;\r\n         }\r\n     }\r\n \r\n     &.open {\r\n"
                 }
             ],
             "date": 1723879486438,

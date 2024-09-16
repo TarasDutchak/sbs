@@ -1583,6 +1583,10 @@ html {
     }
 }
 
+.formsection {
+    overflow: hidden;
+}
+
 @media(max-width:575.8px) {
 
     .formstep .title {
@@ -1593,4 +1597,236 @@ html {
         margin-bottom: 30px;
     }
 
+}
+
+.faqsection {
+    padding: 100px 0;
+    background: #131113;
+}
+
+.faqsection__left {
+    .title {
+        color: #fff;
+        font-size: 32px;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        line-height: 120%;
+    }
+
+    .botttext{ 
+        font-size: 14px;
+        color: #fff;
+        color: rgba(255, 255, 255, 1);
+
+        a {
+            text-decoration: underline;
+            color: #84F7A0;
+            text-underline-offset: 2px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.faqhead {
+    min-height: 72px;
+    padding: 10px 50px 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    p {
+        margin: 0;
+        color: rgba(196, 196, 196, 1);
+        font-weight: 500;
+        line-height: 130%;
+        font-size: 14px;
+        font-family: "Unbounded", sans-serif;
+        transition: 0.3s;
+    }
+
+    button {
+        border: none;
+        padding: 0;
+        background: transparent;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 20px;
+
+
+        img {
+            max-width: 100%;
+            transition: 0.5s;
+        }
+    }
+
+    &.open {
+        p {
+            color: #fff;
+        }
+
+        button {
+            img {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &:hover {
+        button {
+            background: rgba(132, 247, 160, 0.3);
+        }
+
+        .btnel:before {
+            bottom: 0;
+            left: 0;
+        }
+
+        .btnel span:before {
+            bottom: 0;
+            right: 0;
+        }
+
+        .btnel span:after {
+            right: 0;
+            top: 0;
+        }
+
+        .btnel:after {
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.faqrow {
+    background: #0A0A0A;
+    border: 1px solid #676462;
+    margin-bottom: 8px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #131113;
+        position: absolute;
+        right: -10.5px;
+        top: -10px;
+        transform: rotate(45deg);
+        border-bottom: 1px solid #676462;
+    }
+}
+
+.faqbody {
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    display: none;
+}
+
+.faqsection.faqpage {
+    h3 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 18px;
+        margin-top: 48px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .faqsection__left {
+        padding-right: 30px;
+    }
+}
+
+.postnav {
+    ul {
+        margin-bottom: 30px;
+        margin-top: 40px;
+
+        li {
+            margin-bottom: 8px;
+
+            a {
+                color: rgba(66, 121, 92, 1);
+                font-size: 14px;
+                font-weight: 500;
+                font-family: "Unbounded", sans-serif;
+                position: relative;
+                padding-left: 33px;
+                display: block;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background: url('../img/faqarr2.svg') no-repeat center / 12px;
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+    .faqsection__left {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .faqsection.faqpage {
+        .faqsection__right {
+            margin-top: 30px;
+        }
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+    .faqsection {
+        padding: 60px 0;
+    }
+
+    .faqsection__left .title {
+        font-size: 24px;
+    }
+
+    .faqbody {
+        p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+    }
+
+    .faqsection.faqpage .faqsection__left {
+        padding-right: 0;
+    }
+
+    .faqsection.faqpage h3 {
+        font-size: 20px;
+    }
+
+    .faqhead {
+        padding: 10px 45px 10px 10px;
+    }
+
+    .faqhead button {
+        right: 15px;
+    }
 }

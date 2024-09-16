@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 19,
+            "activePatchIndex": 28,
             "patches": [
                 {
                     "date": 1722839935236,
@@ -84,6 +84,42 @@
                 {
                     "date": 1726217351630,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,7 +112,7 @@\n     }\r\n \r\n     $('.nextbtn .greenbtn:not(.submit-btn)').click(function(e){\r\n         e.preventDefault();\r\n-        // $(this).\r\n+        $(this).parents('.formstep').next('.formstep').removeClass('hide');\r\n     })\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490260369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,5 +114,12 @@\n     $('.nextbtn .greenbtn:not(.submit-btn)').click(function(e){\r\n         e.preventDefault();\r\n         $(this).parents('.formstep').next('.formstep').removeClass('hide');\r\n     })\r\n+\r\n+    // faq\r\n+\r\n+\r\n+\r\n+\r\n+    \r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490272536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,11 @@\n     })\r\n \r\n     // faq\r\n \r\n+    $('.faqhead').click(function(){\r\n+        \r\n+    })\r\n \r\n \r\n \r\n-    \r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490318726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,10 +118,10 @@\n \r\n     // faq\r\n \r\n     $('.faqhead').click(function(){\r\n-        \r\n-    })\r\n+        $(this).next('.faqbody').slideToggle();\r\n+    });\r\n \r\n \r\n \r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726490326649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n \r\n     // faq\r\n \r\n     $('.faqhead').click(function(){\r\n-        $(this).next('.faqbody').slideToggle();\r\n+        $(this).next('.faqbody').toggle();\r\n     });\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1726490338059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n \r\n     // faq\r\n \r\n     $('.faqhead').click(function(){\r\n-        $(this).next('.faqbody').toggle();\r\n+        $(this).next('.faqbody').slideToggle();\r\n     });\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1726490356559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,8 +118,9 @@\n \r\n     // faq\r\n \r\n     $('.faqhead').click(function(){\r\n+        $(this).toggleClass('open');\r\n         $(this).next('.faqbody').slideToggle();\r\n     });\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1726491301738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,20 +79,20 @@\n         if (!$target.closest('.imitselectwrapper').length) {\r\n             $('.imitselect__dd').hide();\r\n         }\r\n     });\r\n-    \r\n-    $('.imitselect').click(function(){\r\n+\r\n+    $('.imitselect').click(function () {\r\n         $('.imitselect__dd').toggle();\r\n     });\r\n-    \r\n \r\n \r\n \r\n \r\n \r\n+\r\n     // language\r\n-    $('.header__language span').click(function(){\r\n+    $('.header__language span').click(function () {\r\n         $('.header__language').toggleClass('active')\r\n     });\r\n \r\n     $(document).click(function (event) {\r\n@@ -102,27 +102,92 @@\n         }\r\n     });\r\n \r\n     // -------------------------------------------------\r\n-     // styled selects\r\n-     if ($('select').length) {\r\n+    // styled selects\r\n+    if ($('select').length) {\r\n         $('.styledselect').select2({\r\n             // placeholder: \"Project Type*\",\r\n             minimumResultsForSearch: Infinity,\r\n         });\r\n     }\r\n \r\n-    $('.nextbtn .greenbtn:not(.submit-btn)').click(function(e){\r\n+    $('.nextbtn .greenbtn:not(.submit-btn)').click(function (e) {\r\n         e.preventDefault();\r\n         $(this).parents('.formstep').next('.formstep').removeClass('hide');\r\n     })\r\n \r\n     // faq\r\n \r\n-    $('.faqhead').click(function(){\r\n+    $('.faqhead').click(function () {\r\n         $(this).toggleClass('open');\r\n         $(this).next('.faqbody').slideToggle();\r\n     });\r\n \r\n+    if ($('.postmiansectbody__post').length > 0) {\r\n+        var headers = document.querySelectorAll('.postcontent h2');\r\n+        for (var i = 0; i < headers.length; i++) {\r\n+            headers[i].setAttribute('id', i + 1);\r\n+        }\r\n \r\n \r\n+        var headers = document.querySelectorAll('.postcontent h2');\r\n+        var list = document.querySelector('.postnav');\r\n+        var ul = document.createElement('ul');\r\n+\r\n+        for (var i = 0; i < headers.length; i++) {\r\n+            var text = headers[i].textContent;\r\n+            var id = headers[i].getAttribute('id');\r\n+            var listItem = document.createElement('li');\r\n+            var link = document.createElement('a');\r\n+\r\n+            link.textContent = text;\r\n+            link.setAttribute('href', '#' + id);\r\n+            listItem.appendChild(link);\r\n+            ul.appendChild(listItem);\r\n+        }\r\n+\r\n+        list.appendChild(ul);\r\n+\r\n+\r\n+        // -----------.\r\n+\r\n+\r\n+        $(\".postnav ul\").on(\"click\", \"a\", function (event) {\r\n+            console.log('sdsdsd')\r\n+            event.preventDefault();\r\n+            var id = $(this).attr('href'),\r\n+                top = $(id).offset().top;\r\n+            $('body,html').animate({ scrollTop: top - 105 }, 1500);\r\n+        });\r\n+\r\n+\r\n+        const links = document.querySelectorAll('.postnav li a');\r\n+        window.addEventListener('scroll', () => {\r\n+            const anchors = document.querySelectorAll('.postmiansectbody__post [id]');\r\n+            anchors.forEach(anchor => {\r\n+                if (anchor.closest('.postmiansectbody__post')) {\r\n+                    const anchorTop = anchor.getBoundingClientRect().top + window.pageYOffset;\r\n+                    if (window.pageYOffset >= anchorTop - 110) {\r\n+                        links.forEach(link => {\r\n+                            const correspondingLink = document.querySelector(`.postnav li a[href=\"#${anchor.id}\"]`);\r\n+                            if (correspondingLink) {\r\n+                                link.classList.remove('active');\r\n+                                correspondingLink.classList.add('active');\r\n+                            }\r\n+                        });\r\n+                    }\r\n+                }\r\n+            });\r\n+        });\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+    }\r\n+\r\n+\r\n+\r\n });\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1726491336851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n         $(this).toggleClass('open');\r\n         $(this).next('.faqbody').slideToggle();\r\n     });\r\n \r\n-    if ($('.postmiansectbody__post').length > 0) {\r\n+    if ($('.faqpage').length > 0) {\r\n         var headers = document.querySelectorAll('.postcontent h2');\r\n         for (var i = 0; i < headers.length; i++) {\r\n             headers[i].setAttribute('id', i + 1);\r\n         }\r\n"
+                },
+                {
+                    "date": 1726491357018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,15 +123,15 @@\n         $(this).next('.faqbody').slideToggle();\r\n     });\r\n \r\n     if ($('.faqpage').length > 0) {\r\n-        var headers = document.querySelectorAll('.postcontent h2');\r\n+        var headers = document.querySelectorAll('.faqpage h3');\r\n         for (var i = 0; i < headers.length; i++) {\r\n             headers[i].setAttribute('id', i + 1);\r\n         }\r\n \r\n \r\n-        var headers = document.querySelectorAll('.postcontent h2');\r\n+        var headers = document.querySelectorAll('.faqpage h3');\r\n         var list = document.querySelector('.postnav');\r\n         var ul = document.createElement('ul');\r\n \r\n         for (var i = 0; i < headers.length; i++) {\r\n"
                 }
             ],
             "date": 1722839935236,

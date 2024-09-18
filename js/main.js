@@ -104,7 +104,7 @@ $(document).ready(function () {
 
     // -------------------------------------------------
     // styled selects
-    if ($('select').length) {
+    if ($('.styledselect').length) {
         $('.styledselect').select2({
             // placeholder: "Project Type*",
             minimumResultsForSearch: Infinity,

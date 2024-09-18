@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 148,
+            "activePatchIndex": 150,
             "patches": [
                 {
                     "date": 1721045272111,
@@ -600,6 +600,14 @@
                 {
                     "date": 1726492199512,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -882,9 +882,9 @@\n \r\n             <section class=\"faqsection\">\r\n                 <div class=\"container\">\r\n                     <div class=\"row\">\r\n-                        <div class=\"col-lg-4\">\r\n+                        <div class=\"col-xl-4\">\r\n                             <div class=\"faqsection__left\">\r\n                                 <p class=\"title\">\r\n                                     популярні запитання і відповіді\r\n                                 </p>\r\n@@ -892,9 +892,9 @@\n                                     <span>Всі запитання</span>\r\n                                 </a>\r\n                             </div>\r\n                         </div>\r\n-                        <div class=\"col-lg-8\">\r\n+                        <div class=\"col-xl-8\">\r\n                             <div class=\"faqsection__right\">\r\n                                 <div class=\"faqaccordeon\">\r\n                                     <div class=\"faqrow\">\r\n                                         <div class=\"faqhead\">\r\n"
+                },
+                {
+                    "date": 1726667902858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -695,9 +695,9 @@\n                                                             Категорія водійського посвідчення\r\n                                                         </label>\r\n                                                         <div class=\"selectwrap\">\r\n                                                             <select name=\"serv\" id=\"\" class=\"styledselect\"\r\n-                                                                data-placeholder=\"Виберіть категорії\">\r\n+                                                                data-placeholder=\"Виберіть категорії\" multiple=\"multiple\">\r\n                                                                 <option></option>\r\n                                                                 <option value=\"1\">A</option>\r\n                                                                 <option value=\"2\">B</option>\r\n                                                                 <option value=\"3\">C</option>\r\n"
+                },
+                {
+                    "date": 1726667936965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -700,8 +700,17 @@\n                                                                 <option></option>\r\n                                                                 <option value=\"1\">A</option>\r\n                                                                 <option value=\"2\">B</option>\r\n                                                                 <option value=\"3\">C</option>\r\n+                                                                <option value=\"4\">D</option>\r\n+                                                                <option value=\"1\">A</option>\r\n+                                                                <option value=\"2\">B</option>\r\n+                                                                <option value=\"3\">C</option>\r\n+                                                                <option value=\"4\">D</option>\r\n+                                                                <option value=\"1\">A</option>\r\n+                                                                <option value=\"2\">B</option>\r\n+                                                                <option value=\"3\">C</option>\r\n+                                                                <option value=\"4\">D</option>\r\n                                                             </select>\r\n                                                         </div>\r\n                                                     </div>\r\n                                                 </div>\r\n"
                 }
             ],
             "date": 1721045272111,

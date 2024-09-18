@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 28,
+            "activePatchIndex": 29,
             "patches": [
                 {
                     "date": 1722839935236,
@@ -120,6 +120,10 @@
                 {
                     "date": 1726491357018,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,15 +123,15 @@\n         $(this).next('.faqbody').slideToggle();\r\n     });\r\n \r\n     if ($('.faqpage').length > 0) {\r\n-        var headers = document.querySelectorAll('.postcontent h2');\r\n+        var headers = document.querySelectorAll('.faqpage h3');\r\n         for (var i = 0; i < headers.length; i++) {\r\n             headers[i].setAttribute('id', i + 1);\r\n         }\r\n \r\n \r\n-        var headers = document.querySelectorAll('.postcontent h2');\r\n+        var headers = document.querySelectorAll('.faqpage h3');\r\n         var list = document.querySelector('.postnav');\r\n         var ul = document.createElement('ul');\r\n \r\n         for (var i = 0; i < headers.length; i++) {\r\n"
+                },
+                {
+                    "date": 1726553424866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,9 @@\n     });\r\n \r\n     // -------------------------------------------------\r\n     // styled selects\r\n-    if ($('select').length) {\r\n+    if ($('.styledselect').length) {\r\n         $('.styledselect').select2({\r\n             // placeholder: \"Project Type*\",\r\n             minimumResultsForSearch: Infinity,\r\n         });\r\n"
                 }
             ],
             "date": 1722839935236,

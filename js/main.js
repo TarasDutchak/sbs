@@ -113,6 +113,7 @@ $(document).ready(function () {
 
     $('.nextbtn .greenbtn:not(.submit-btn)').click(function (e) {
         e.preventDefault();
+        $(this).parents('.formstep').addClass('hide');
         $(this).parents('.formstep').next('.formstep').removeClass('hide');
     })
 
@@ -149,7 +150,6 @@ $(document).ready(function () {
         list.appendChild(ul);
 
 
-        // -----------.
 
 
         $(".postnav ul").on("click", "a", function (event) {
@@ -180,14 +180,6 @@ $(document).ready(function () {
             });
         });
 
-
-
-
-
-
-
     }
-
-
 
 });

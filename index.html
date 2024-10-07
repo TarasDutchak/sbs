@@ -422,7 +422,7 @@
                                 <form action="#">
                                     <div class="formstep">
                                         <p class="title active">
-                                            Особиста інформація
+                                            Персональні дані
                                         </p>
                                         <div class="formstep__wrapper">
                                             <div class="row">
@@ -440,41 +440,14 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="inputfield">
-                                                        <label for="ipn">Індивідуальний податковий номер (ІПН)</label>
-                                                        <input type="text" id="ipn">
+                                                        <label for="tname">По батькові*</label>
+                                                        <input type="text" id="tname">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="inputfield">
-                                                        <label for="">
-                                                            Чи є судимість або відкриті судові провадженння? *
-                                                        </label>
-                                                        <div class="radiowrap">
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="r1" name="radio">
-                                                                <label for="r1">Так</label>
-                                                            </div>
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="r2" name="radio">
-                                                                <label for="r2">Ні</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Мова спілкування
-                                                        </label>
-                                                        <div class="selectwrap">
-                                                            <select name="serv" id="" class="styledselect"
-                                                                data-placeholder="Оберіть мову">
-                                                                <option></option>
-                                                                <option value="1">Українська</option>
-                                                                <option value="2">Українська</option>
-                                                                <option value="5">Українська</option>
-                                                            </select>
-                                                        </div>
+                                                        <label for="birthday">Дата народження *</label>
+                                                        <input type="date" id="birthday" placeholder="__/__/____">
                                                     </div>
                                                 </div>
                                             </div>
@@ -488,123 +461,7 @@
 
                                     <div class="formstep hide">
                                         <p class="title">
-                                            Адреси
-                                        </p>
-                                        <div class="formstep__wrapper">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Область проживання *
-                                                        </label>
-                                                        <div class="selectwrap">
-                                                            <select name="serv" id="" class="styledselect"
-                                                                data-placeholder="Виберіть область">
-                                                                <option></option>
-                                                                <option value="1">Київська</option>
-                                                                <option value="2">Івано-Франківська</option>
-                                                                <option value="3">Херсонська</option>
-                                                                <option value="3">Сумська</option>
-                                                                <option value="3">Одеська</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Місто проживання *
-                                                        </label>
-                                                        <div class="selectwrap">
-                                                            <select name="serv" id="" class="styledselect"
-                                                                data-placeholder="Виберіть місто">
-                                                                <option></option>
-                                                                <option value="1">Київ</option>
-                                                                <option value="2">Івано-Франківська</option>
-                                                                <option value="3">Підгайчики</option>
-                                                                <option value="3">Кути</option>
-                                                                <option value="3">Білгород-Дністровський</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="inputfield">
-                                                        <label for="addr1">Адреса проживання</label>
-                                                        <input type="text" id="addr1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Чи маєте статус Внутрішньо Переміщеної Особи (ВПО)? *
-                                                        </label>
-                                                        <div class="radiowrap">
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="vpo1" name="vpo">
-                                                                <label for="vpo1">Так</label>
-                                                            </div>
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="vpo2" name="vpo">
-                                                                <label for="vpo2">Ні</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Область реєстрації *
-                                                        </label>
-                                                        <div class="selectwrap">
-                                                            <select name="serv" id="" class="styledselect"
-                                                                data-placeholder="Виберіть область">
-                                                                <option></option>
-                                                                <option value="1">Київська</option>
-                                                                <option value="2">Івано-Франківська</option>
-                                                                <option value="3">Херсонська</option>
-                                                                <option value="3">Сумська</option>
-                                                                <option value="3">Одеська</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Місто реєстрації *
-                                                        </label>
-                                                        <div class="selectwrap">
-                                                            <select name="serv" id="" class="styledselect"
-                                                                data-placeholder="Виберіть місто">
-                                                                <option></option>
-                                                                <option value="1">Київ</option>
-                                                                <option value="2">Івано-Франківська</option>
-                                                                <option value="3">Підгайчики</option>
-                                                                <option value="4">Кути</option>
-                                                                <option value="5">Білгород-Дністровський</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="inputfield">
-                                                        <label for="addr2">Адреса реєстрації *</label>
-                                                        <input type="text" id="addr2">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="nextbtn">
-                                                <button class="greenbtn btnel">
-                                                    <span>Далі</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="formstep hide">
-                                        <p class="title">
-                                            Засоби зв’язку
+                                            Засоби зв'язку
                                         </p>
                                         <div class="formstep__wrapper">
                                             <div class="row">
@@ -650,14 +507,89 @@
 
                                     <div class="formstep hide">
                                         <p class="title">
-                                            Освіта та навички
+                                            Проживання та реєстрація
                                         </p>
                                         <div class="formstep__wrapper">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="inputfield">
                                                         <label for="">
-                                                            Рівень освіти *
+                                                            Країна фактичного проживання *
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть або введіть країну">
+                                                                <option></option>
+                                                                <option value="1">Україна</option>
+                                                                <option value="2">Польша</option>
+                                                                <option value="3">Болгарія</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Область фактичного проживання *
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть або введіть область">
+                                                                <option></option>
+                                                                <option value="1">Київська</option>
+                                                                <option value="2">Івано-Франківська</option>
+                                                                <option value="3">Одеська</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Місто фактичного проживання *
+                                                        </label>
+                                                        <div class="selectwrap">
+                                                            <select name="serv" id="" class="styledselect"
+                                                                data-placeholder="Виберіть або введіть місто">
+                                                                <option></option>
+                                                                <option value="1">Київ</option>
+                                                                <option value="2">Івано-Франківськ</option>
+                                                                <option value="3">Одеса</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="inputfield">
+                                                        <label for="adress">Адреса проживання</label>
+                                                        <input type="text" id="adress">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="nextbtn">
+                                                <button class="greenbtn btnel">
+                                                    <span>Далі</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="formstep hide">
+                                        <p class="title">
+                                            Освіта та досвід
+                                        </p>
+                                        <div class="formstep__wrapper">
+                                            <div class="row align-items-end">
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="skills">Професійні навички (скіли) *</label>
+                                                        <input type="text" id="skills">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="">
+                                                            Який напрям діяльності для вас пріоритетний для майбутньої служби? *
                                                         </label>
                                                         <div class="selectwrap">
                                                             <select name="serv" id="" class="styledselect"
@@ -670,48 +602,27 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="w-100"></div>
                                                 <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="osv1">Спеціальність *</label>
-                                                        <input type="text" id="osv1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="osv2">Професійні навички (скіли) *</label>
-                                                        <input type="text" id="osv2">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="osv3">Остання цивільна посада</label>
-                                                        <input type="text" id="osv3">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 ml-auto">
                                                     <div class="inputfield">
                                                         <label for="">
-                                                            Категорія водійського посвідчення
+                                                            Я маю досвід з БПЛА *
                                                         </label>
-                                                        <div class="selectwrap">
-                                                            <select name="serv" id="" class="styledselect"
-                                                                data-placeholder="Виберіть категорії" multiple="multiple">
-                                                                <option></option>
-                                                                <option value="1">A</option>
-                                                                <option value="2">B</option>
-                                                                <option value="3">C</option>
-                                                                <option value="4">D</option>
-                                                                <option value="1">A</option>
-                                                                <option value="2">B</option>
-                                                                <option value="3">C</option>
-                                                                <option value="4">D</option>
-                                                                <option value="1">A</option>
-                                                                <option value="2">B</option>
-                                                                <option value="3">C</option>
-                                                                <option value="4">D</option>
-                                                            </select>
+                                                        <div class="radiowrap">
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="d1" name="dos1">
+                                                                <label for="d1">Так</label>
+                                                            </div>
+                                                            <div class="radiobox">
+                                                                <input type="radio" id="d2" name="dos1">
+                                                                <label for="d2">Ні</label>
+                                                            </div>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputfield">
+                                                        <label for="dosbpla">Який маєте досвід з БПЛА? *</label>
+                                                        <input type="text" id="dosbpla">
                                                     </div>
                                                 </div>
                                             </div>
@@ -732,7 +643,7 @@
                                                 <div class="col-md-6">
                                                     <div class="inputfield">
                                                         <label for="">
-                                                            Ви діючий війсковослужбовий? *
+                                                            Я діючий військовослужбовець *
                                                         </label>
                                                         <div class="radiowrap">
                                                             <div class="radiobox">
@@ -749,7 +660,7 @@
                                                 <div class="col-md-6">
                                                     <div class="inputfield">
                                                         <label for="">
-                                                            Ви є офіцером запасу? *
+                                                            Я офіцер запасу
                                                         </label>
                                                         <div class="radiowrap">
                                                             <div class="radiobox">
@@ -772,7 +683,7 @@
                                                 <div class="col-md-6">
                                                     <div class="inputfield">
                                                         <label for="">
-                                                            Є дозвіл на переведення?
+                                                            Я маю дозвіл на переведення
                                                         </label>
                                                         <div class="radiowrap">
                                                             <div class="radiobox">
@@ -786,89 +697,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Чи маєте ви спец.звання (ДСНС, Поліція, тощо)?
-                                                        </label>
-                                                        <div class="radiowrap">
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="v7" name="mil4">
-                                                                <label for="v7">Так</label>
-                                                            </div>
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="v8" name="mil4">
-                                                                <label for="v8">Ні</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="inputfield">
-                                                        <label for="stat1">Військове звання</label>
-                                                        <input type="text" id="stat1">
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="nextbtn">
-                                                <button class="greenbtn btnel">
-                                                    <span>Далі</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="formstep hide">
-                                        <p class="title">
-                                            Інформація про здоров’я
-                                        </p>
-                                        <div class="formstep__wrapper">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Є критичні захворювання? *
-                                                        </label>
-                                                        <div class="radiowrap">
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="hv1" name="hv1">
-                                                                <label for="hv1">Так</label>
-                                                            </div>
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="hv2" name="hv1">
-                                                                <label for="hv2">Ні</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="inputfield">
-                                                        <label for="det1">Деталі про здоров'я *</label>
-                                                        <input type="text" id="det1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="inputfield">
-                                                        <label for="">
-                                                            Ви погоджуєтесь на обробку персональних даних для
-                                                            використання в
-                                                            цілях рекрутингу Сил Безпілотних Систем? (Інформація НЕ буде
-                                                            передана до ТЦК та СП) *
-                                                        </label>
-                                                        <div class="radiowrap">
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="hv3" name="hv2">
-                                                                <label for="hv3">Так</label>
-                                                            </div>
-                                                            <div class="radiobox">
-                                                                <input type="radio" id="hv4" name="hv2">
-                                                                <label for="hv4">Ні</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
                                             </div>
                                             <div class="nextbtn">
                                                 <button type="submit" class="greenbtn btnel submit-btn">

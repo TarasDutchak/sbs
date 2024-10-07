@@ -1539,7 +1539,7 @@ html {
     //     top: -3px;
     // }
 
-   
+
 
 
 
@@ -1630,13 +1630,26 @@ html {
             background-position: center;
             background-size: 12px;
             transition: 0.5s;
+            transform: rotate(-180deg);
         }
 
-        &.active {
+        // &.active {
+        //     &::after {
+        //         transform: rotate(-180deg);
+        //     }
+        // }
+    }
+
+    &.hide {
+        .title {
             &::after {
-                transform: rotate(-180deg);
+                transform: rotate(-360deg);
             }
         }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -1645,13 +1658,13 @@ html {
     min-width: 100%;
 }
 
-.formstep {
-    &.hide {
-        .formstep__wrapper {
-            display: none;
-        }
-    }
-}
+// .formstep {
+//     &.hide {
+//         .formstep__wrapper {
+//             display: none;
+//         }
+//     }
+// }
 
 .formsection {
     overflow: hidden;
@@ -1867,6 +1880,10 @@ html {
     }
 }
 
+.formstep.hide .formstep__wrapper {
+    display: none;
+}
+
 @media(max-width:1199.8px) {
     .faqsection__left {
         margin-bottom: 30px;
@@ -1917,7 +1934,12 @@ html {
     }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
-
-
-
+input[type=number] {
+    -moz-appearance: textfield;
+}

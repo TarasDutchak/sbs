@@ -1722,7 +1722,7 @@ html {
     align-items: center;
     cursor: pointer;
     position: relative;
-    transition: 0.3;
+    transition: 0.3s;
 
     p {
         margin: 0;
@@ -1766,27 +1766,27 @@ html {
         background: #0E1A11;
 
         button {
-            background: rgba(132, 247, 160, 0.3);
+            // background: rgba(132, 247, 160, 0.3);
         }
 
         .btnel:before {
-            bottom: 0;
-            left: 0;
+            bottom: -5px;
+            left: -5px;
         }
 
         .btnel span:before {
-            bottom: 0;
-            right: 0;
+            bottom: -5px;
+            right: -5px;
         }
 
         .btnel span:after {
-            right: 0;
-            top: 0;
+            right: -5px;
+            top: -5px;
         }
 
         .btnel:after {
-            left: 0;
-            top: 0;
+            left: -5px;
+            top: -5px;
         }
     }
 }
@@ -1817,12 +1817,18 @@ html {
 }
 
 .faqbody {
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
     color: #fff;
     font-size: 16px;
     display: none;
 
+    p {
+        font-size: 12px;
 
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .faqsection.faqpage {

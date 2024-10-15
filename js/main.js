@@ -91,20 +91,20 @@ $(document).ready(function () {
         const checkboxes = document.querySelectorAll('.imitselect__dd input[type="checkbox"]');
         const countBlock = document.querySelector('.count');
         const chooseText = document.querySelector('.choosetext');
-        const countSpan = countBlock.querySelector('.count span');
+        const countSpan = countBlock.querySelector('span');
         const countI = countBlock.querySelector('i');
-        const ul1 = document.querySelector('.imitselect__dd ul');
+        const ul = document.querySelector('.imitselect__dd ul');
         const otherCheckbox = document.getElementById('showother');
         const otherInputBlock = document.querySelector('.otherinp');
-
-
+    
+    
         const wl_localize_vars = {
             specialty: 'спеціальність',
             specialties: 'спеціальності',
             specialties_plural: 'спеціальностей'
         };
-
-
+    
+    
         function getWordForCount(count) {
             if (count === 1) {
                 return wl_localize_vars.specialty;
@@ -114,11 +114,11 @@ $(document).ready(function () {
                 return wl_localize_vars.specialties_plural;
             }
         }
-
+        
         checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', function () {
+            checkbox.addEventListener('change', function() {
                 const checkedCount = document.querySelectorAll('.imitselect__dd input[type="checkbox"]:checked').length;
-
+        
                 if (checkedCount > 0) {
                     countBlock.style.display = 'block';
                     chooseText.classList.add('hidden');
@@ -128,15 +128,22 @@ $(document).ready(function () {
                     countBlock.style.display = 'none';
                     chooseText.classList.remove('hidden');
                 }
-
+        
                 if (this.checked) {
-                    ul1.prepend(this.closest('li'));
+                    ul.prepend(this.closest('li'));
                 } else {
-                    const uncheckedItems = Array.from(ul1.querySelectorAll('li')).filter(item => !item.querySelector('input').checked);
-                    uncheckedItems.forEach(item => ul1.append(item));
+                    const uncheckedItems = Array.from(ul.querySelectorAll('li')).filter(item => !item.querySelector('input').checked);
+                    uncheckedItems.forEach(item => ul.append(item));
+                }
+        
+                if (otherCheckbox.checked) {
+                    otherInputBlock.style.display = 'block';
+                } else {
+                    otherInputBlock.style.display = 'none';
                 }
             });
         });
+        
     }
 
     // ----------------

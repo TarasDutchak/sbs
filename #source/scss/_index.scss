@@ -1431,7 +1431,7 @@ html {
 
 // 17.08
 .imitselect__dd {
-    height: 440px;
+    height: 290px;
     overflow: auto;
 
     &::-webkit-scrollbar {
@@ -1618,6 +1618,7 @@ html {
         padding-left: 32px;
         font-family: "Unbounded", sans-serif;
         margin-bottom: 32px;
+        cursor: pointer;
 
         &::after {
             content: '';

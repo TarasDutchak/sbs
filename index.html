@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="pagewrapper">
+    <div class="pagewrapper sticky-el">
         <header class="header">
             <div class="container">
                 <div class="row align-items-center">
@@ -591,7 +591,7 @@
                                                         <label for="">
                                                             Який напрям діяльності для вас пріоритетний для майбутньої служби? *
                                                         </label>
-                                                        <div class="selectwrap">
+                                                        <!-- <div class="selectwrap">
                                                             <select name="serv" id="" class="styledselect"
                                                                 data-placeholder="Виберіть рівень освіти">
                                                                 <option></option>
@@ -599,7 +599,98 @@
                                                                 <option value="2">Бакалавр</option>
                                                                 <option value="3">Середня</option>
                                                             </select>
+                                                        </div> -->
+
+                                                        <div class="imitselectwrapper">
+                                                            <div class="imitselect">
+                                                                <p class="choosetext">Оберіть спеціальність</p>
+                                                                <p class="count">Вибрано <span></span> <i>спеціальності</i></p>
+                                                            </div>
+                                                            <div class="imitselect__dd">
+                                                                <ul>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp1">
+                                                                        <label for="sp1">Оператор БПЛА мультироторного
+                                                                            типу</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp2">
+                                                                        <label for="sp2">Оператор БПЛА літакового типу</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp3">
+                                                                        <label for="sp3">Оператор безпілотних наземних
+                                                                            систем</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp4">
+                                                                        <label for="sp4">Оператор безпілотних надводних
+                                                                            систем</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp5">
+                                                                        <label for="sp5">Помічник оператора</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp6">
+                                                                        <label for="sp6">Інженер-вибухотехнік</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp7">
+                                                                        <label for="sp7">Оператор звʼязку</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp8">
+                                                                        <label for="sp8">Механік-водій</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp9">
+                                                                        <label for="sp9">Медик</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="showother">
+                                                                        <label for="showother">Інше1</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp11">
+                                                                        <label for="sp11">Інше2</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp12">
+                                                                        <label for="sp12">Інше3</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp13">
+                                                                        <label for="sp13">Інше4</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp14">
+                                                                        <label for="sp14">Інше5</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp15">
+                                                                        <label for="sp15">Інше6</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp16">
+                                                                        <label for="sp16">Інше7</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp17">
+                                                                        <label for="sp17">Інше8</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp18">
+                                                                        <label for="sp18">Інше9</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox" id="sp19">
+                                                                        <label for="sp19">Інше10</label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -847,10 +938,6 @@
                     </div>
                 </div>
             </section>
-
-
-
-
         </main>
 
         <footer class="footer">

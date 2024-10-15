@@ -85,7 +85,61 @@ $(document).ready(function () {
         $('.imitselect__dd').toggle();
     });
 
+    // ----------------
+    
+    if ($('.imitselect__dd').length) {
+    const checkboxes = document.querySelectorAll('.imitselect__dd input[type="checkbox"]');
+    const countBlock = document.querySelector('.count');
+    const chooseText = document.querySelector('.choosetext');
+    const countSpan = countBlock.querySelector('.count span');
+    const countI = countBlock.querySelector('i');
+    const ul1 = document.querySelector('.imitselect__dd ul');
+    const otherCheckbox = document.getElementById('showother');
+    const otherInputBlock = document.querySelector('.otherinp');
 
+
+    const wl_localize_vars = {
+        specialty: 'спеціальність',
+        specialties: 'спеціальності',
+        specialties_plural: 'спеціальностей'
+    };
+
+
+    function getWordForCount(count) {
+        if (count === 1) {
+            return wl_localize_vars.specialty;
+        } else if (count >= 2 && count <= 4) {
+            return wl_localize_vars.specialties;
+        } else {
+            return wl_localize_vars.specialties_plural;
+        }
+    }
+    
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const checkedCount = document.querySelectorAll('.imitselect__dd input[type="checkbox"]:checked').length;
+    
+            if (checkedCount > 0) {
+                countBlock.style.display = 'block';
+                chooseText.classList.add('hidden');
+                countSpan.textContent = checkedCount;
+                countI.textContent = getWordForCount(checkedCount);
+            } else {
+                countBlock.style.display = 'none';
+                chooseText.classList.remove('hidden');
+            }
+    
+            if (this.checked) {
+                ul1.prepend(this.closest('li'));
+            } else {
+                const uncheckedItems = Array.from(ul1.querySelectorAll('li')).filter(item => !item.querySelector('input').checked);
+                uncheckedItems.forEach(item => ul1.append(item));
+            }
+        });
+    });
+}
+
+    // ----------------
 
 
 

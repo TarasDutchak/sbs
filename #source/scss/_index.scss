@@ -871,6 +871,7 @@ html {
 }
 
 .imitselect {
+    border: none;
     height: 40px;
     border-radius: 8px;
     padding: 4px 40px 4px 14px;
@@ -878,7 +879,8 @@ html {
     font-size: 14px;
     font-weight: 300;
     font-family: "Unbounded", sans-serif;
-    border: 1px solid var(--dark-grey);
+    border-bottom: 1px solid var(--dark-grey);
+    border-radius: 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -938,6 +940,7 @@ html {
         font-family: "Unbounded", sans-serif;
         padding-left: 28px;
         position: relative;
+        cursor: pointer;
 
         &::after {
             content: '';
@@ -1688,6 +1691,9 @@ html {
 }
 
 .faqsection__left {
+    position: sticky;
+    top: 100px;
+
     .title {
         color: #fff;
         font-size: 32px;

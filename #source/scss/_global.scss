@@ -35,6 +35,10 @@ html {
     overflow: hidden;
 }
 
+.pagewrapper.sticky-el {
+    overflow: initial;
+}
+
 body {
     font-family: "ruberoid";
     font-size: 16px;

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "#source/scss/style.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1730623181785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730623691776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n @import \"global\";\r\n @import \"index\";\r\n @import \"error\";\r\n @import \"contactus\";\r\n+\r\n @import \"header\";\r\n @import \"footer\";\r\n \r\n \r\n"
+                }
+            ],
+            "date": 1730623181785,
+            "name": "Commit-0",
+            "content": "@import \"fonts\";\r\n@import \"global\";\r\n@import \"index\";\r\n@import \"error\";\r\n@import \"contactus\";\r\n@import \"header\";\r\n@import \"footer\";\r\n\r\n\r\n"
+        }
+    ]
+}

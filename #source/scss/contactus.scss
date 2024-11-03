@@ -1,0 +1,431 @@
+.contactwelcomesect {
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        color: #fff;
+        font-size: 40px;
+        line-height: 120%;
+        font-weight: 500;
+        font-family: "Unbounded", sans-serif;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .col-lg-12.mt20 {
+        margin-top: 20px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        display: block;
+        height: 8px;
+        width: 100%;
+        background: url(../img/lines.png) repeat-x;
+        bottom: 0;
+    }
+}
+
+.continfblock {
+    margin-bottom: 40px;
+
+    .title {
+        font-family: "Unbounded", sans-serif;
+        margin-bottom: 16px;
+        color: #F5F5F5;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    ul {
+        margin: 0;
+        list-style-type: disc;
+        padding: 0 0 0 20px;
+
+        li {
+            color: #C4C4C4;
+            font-family: "ruberoid";
+            font-size: 16px;
+            line-height: 135%;
+            margin-bottom: 2px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    p {
+        color: #C4C4C4;
+        font-size: 16px;
+        line-height: 135%;
+        font-family: "ruberoid";
+        margin: 0;
+    }
+}
+
+.contactwelcomesect__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.genconttext {
+    margin: 0;
+    color: #C4C4C4;
+    font-size: 14px;
+    line-height: 135%;
+    font-family: "ruberoid";
+}
+
+.commander.ourteam {
+    .commander__info .commander__infoels {
+        padding: 76px 40px;
+        min-height: 540px;
+    }
+
+    .titlename {
+        color: #42795C;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        b {
+            color: #fff;
+        }
+    }
+}
+
+.about.ourteam {
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .likeh2 {
+        margin-bottom: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        display: block;
+        height: 8px;
+        width: 100%;
+        background: url(../img/lines.png) repeat-x;
+        bottom: 0;
+    }
+
+    .col-lg-6 {
+        margin-top: 56px;
+    }
+
+    .aboutbox {
+
+        height: 100%;
+
+        .title {
+            text-transform: uppercase;
+            color: #fff;
+            font-family: "Unbounded", sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            margin-bottom: 18px;
+            line-height: 120%;
+        }
+    }
+
+    .row {
+        margin-left: -35px;
+        margin-right: -35px;
+
+        .col-lg-6 {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
+}
+
+.faqsection.ourteam {
+    background: #000201;
+
+    .title {
+        color: #42795C;
+        font-size: 40px;
+        line-height: 120%;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 500;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    .faqsection__left {
+        position: relative;
+        top: 0;
+
+        p {
+            color: #878787;
+            font-size: 14px;
+            max-width: 344px;
+        }
+    }
+
+
+    .faqrow:after {
+        background: #000201;
+    }
+
+    .faqsection__left .greenbtn {
+        height: 52px;
+        width: 174px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+
+}
+
+.commander.ourteam {
+    .commander__info .commanderimg {
+        right: 1px;
+    }
+
+    .commander__infoels {
+        .row {
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+@media(max-width:1599.8px) {
+    .about.ourteam .aboutbox .title {
+        font-size: 21px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .faqsection.ourteam .title {
+        font-size: 36px;
+    }
+
+    .about.ourteam .aboutbox .title {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .faqsection.ourteam .faqsection__left {
+        margin-bottom: 50px;
+
+        p {
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .contactwelcomesect .col-lg-12.mt20 {
+        margin-top: 0;
+    }
+
+    .commander.ourteam {
+        padding-bottom: 70px;
+
+        .wrapblock {
+            padding: 0;
+        }
+
+        .commander__info .commanderimg {
+            display: block;
+            position: relative;
+        }
+
+        .commander__info .commander__infoels {
+            padding: 60px 0 0 0;
+        }
+
+        .wrapblock {
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .commander.ourteam .commander__info .commanderimg {
+        right: -1px;
+        width: calc(100% - 2px);
+    }
+
+    .about.ourteam .aboutbox {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .contactwelcomesect h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .contactwelcomesect {
+        padding: 50px 0 60px;
+    }
+
+    .continfblock .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .continfblock ul li {
+        font-size: 14px;
+    }
+
+    .continfblock {
+        margin-bottom: 20px;
+    }
+
+    .commander.ourteam .commander__info .commander__infoels {
+        padding-top: 40px;
+    }
+
+    .commander.ourteam .wrapblock {
+        padding: 0 20px 30px 20px;
+    }
+
+    .about.ourteam .col-lg-6 {
+        margin-top: 40px;
+    }
+
+    .about.ourteam .aboutbox .title {
+        font-size: 18px;
+    }
+
+    .faqsection.ourteam .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:360.8px) {
+    .contactwelcomesect h1 {
+        font-size: 25px;
+    }
+}
+
+.callbackform {
+    .btn-close {
+        opacity: 1;
+        background: none;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        padding: 0;
+        z-index: 2;
+        outline: none;
+        cursor: pointer;
+        box-shadow: none;
+
+        img {
+            vertical-align: top;
+        }
+    }
+
+    .modal-dialog {
+        max-width: 650px;
+    }
+
+    .modal-content {
+        background: #141314;
+        border-radius: 0;
+        border: 1px solid #676462;
+    }
+
+    .modal-body {
+        padding: 32px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        color: #42795C;
+        font-size: 20px;
+        line-height: 130%;
+        font-weight: 600;
+        font-family: "Unbounded", sans-serif;
+        padding-right: 50px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        color: #C4C4C4;
+        font-size: 14px;
+        line-height: 135%;
+        font-family: "ruberoid";
+    }
+
+    .formsection {
+        padding: 0 0 10px 0;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .callbackform .modal-dialog {
+        width: calc(100% - 30px);
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .callbackform .modal-dialog {
+        width: auto;
+    }
+
+    .callbackform .modal-body {
+        padding: 24px;
+    }
+
+    .callbackform .btn-close {
+        top: 24px;
+        right: 24px;
+    }
+
+    .callbackform .title {
+        font-size: 18px;
+    }
+
+    .callbackform  .formsection .inputfield {
+        margin-bottom: 20px;
+    }
+
+    .callbackform  .greenbtn.btnel {
+        max-width: 100%;
+    }
+
+
+}

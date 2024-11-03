@@ -1,0 +1,462 @@
+{
+    "sourceFile": "#source/scss/contactus.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 111,
+            "patches": [
+                {
+                    "date": 1730623659699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730623670376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,7 @@\n .contactwelcomesect {\n     padding: 60px 0;\n+\n+    h1 {\n+        color: #fff;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730623711244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,8 @@\n     padding: 60px 0;\n \n     h1 {\n         color: #fff;\n+        font-size: 40px;\n+        line-height: 120%;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730623722099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,8 @@\n     h1 {\n         color: #fff;\n         font-size: 40px;\n         line-height: 120%;\n+        font-weight: 500;\n+        font-family: \"Unbounded\", sans-serif;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730623735135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,8 @@\n         font-size: 40px;\n         line-height: 120%;\n         font-weight: 500;\n         font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 40px;\n+        text-transform: uppercase;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624009528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,17 @@\n         font-family: \"Unbounded\", sans-serif;\n         margin-bottom: 40px;\n         text-transform: uppercase;\n     }\n+}\n+\n+.continfblock {\n+    .title {}\n+\n+    ul {\n+\n+    }\n+\n+    p {\n+        color: C4C4C4;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624028625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,10 @@\n \n     }\n \n     p {\n-        color: C4C4C4;\n+        color: #C4C4C4;\n+        font-size: 16px;\n+        line-height: 135%;\n+        font-family: \"ruberoid\";\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624045052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,12 @@\n     }\n }\n \n .continfblock {\n-    .title {}\n+    .title {\n+        margin-bottom: 16px;\n+        color: #F5F5F5;\n+    }\n \n     ul {\n \n     }\n"
+                },
+                {
+                    "date": 1730624053755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n .continfblock {\n     .title {\n         margin-bottom: 16px;\n         color: #F5F5F5;\n+        font-size: 24px;\n+        line-height: 120%;\n     }\n \n     ul {\n \n"
+                },
+                {
+                    "date": 1730624065259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n }\n \n .continfblock {\n     .title {\n+        font-family: \"Unbounded\", sans-serif;\n         margin-bottom: 16px;\n         color: #F5F5F5;\n         font-size: 24px;\n         line-height: 120%;\n"
+                },
+                {
+                    "date": 1730624094826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,10 @@\n     }\n }\n \n .continfblock {\n+    margin-bottom: 40px;\n+    \n     .title {\n         font-family: \"Unbounded\", sans-serif;\n         margin-bottom: 16px;\n         color: #F5F5F5;\n"
+                },
+                {
+                    "date": 1730624103000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,37 @@\n+.contactwelcomesect {\n+    padding: 60px 0;\n+\n+    h1 {\n+        color: #fff;\n+        font-size: 40px;\n+        line-height: 120%;\n+        font-weight: 500;\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 40px;\n+        text-transform: uppercase;\n+    }\n+}\n+\n+.continfblock {\n+    margin-bottom: 40px;\n+\n+    .title {\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 16px;\n+        color: #F5F5F5;\n+        font-size: 24px;\n+        line-height: 120%;\n+    }\n+\n+    ul {\n+\n+    }\n+\n+    p {\n+        color: #C4C4C4;\n+        font-size: 16px;\n+        line-height: 135%;\n+        font-family: \"ruberoid\";\n+        margin: 0;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624139229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,18 @@\n         line-height: 120%;\n     }\n \n     ul {\n+        list-style-type: none;\n+        margin: 0;\n+        padding: 0;\n \n+        li {\n+            color: #C4C4C4;\n+            font-family: \"ruberoid\";\n+            font-size: 16px;\n+            line-height: 135%;\n+        }\n     }\n \n     p {\n         color: #C4C4C4;\n@@ -33,41 +42,5 @@\n         line-height: 135%;\n         font-family: \"ruberoid\";\n         margin: 0;\n     }\n-}\n-.contactwelcomesect {\n-    padding: 60px 0;\n-\n-    h1 {\n-        color: #fff;\n-        font-size: 40px;\n-        line-height: 120%;\n-        font-weight: 500;\n-        font-family: \"Unbounded\", sans-serif;\n-        margin-bottom: 40px;\n-        text-transform: uppercase;\n-    }\n-}\n-\n-.continfblock {\n-    margin-bottom: 40px;\n-    \n-    .title {\n-        font-family: \"Unbounded\", sans-serif;\n-        margin-bottom: 16px;\n-        color: #F5F5F5;\n-        font-size: 24px;\n-        line-height: 120%;\n-    }\n-\n-    ul {\n-\n-    }\n-\n-    p {\n-        color: #C4C4C4;\n-        font-size: 16px;\n-        line-height: 135%;\n-        font-family: \"ruberoid\";\n-    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624148201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n         line-height: 120%;\n     }\n \n     ul {\n-        list-style-type: none;\n         margin: 0;\n         padding: 0;\n \n         li {\n"
+                },
+                {
+                    "date": 1730624166235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,9 @@\n     }\n \n     ul {\n         margin: 0;\n-        padding: 0;\n-\n+        list-style-type: disc;\n         li {\n             color: #C4C4C4;\n             font-family: \"ruberoid\";\n             font-size: 16px;\n"
+                },
+                {
+                    "date": 1730624175378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n \n     ul {\n         margin: 0;\n         list-style-type: disc;\n+        padding: 0 0 0 20px;\n         li {\n             color: #C4C4C4;\n             font-family: \"ruberoid\";\n             font-size: 16px;\n"
+                },
+                {
+                    "date": 1730624192133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,13 +26,19 @@\n     ul {\n         margin: 0;\n         list-style-type: disc;\n         padding: 0 0 0 20px;\n+\n         li {\n             color: #C4C4C4;\n             font-family: \"ruberoid\";\n             font-size: 16px;\n             line-height: 135%;\n+            margin-bottom: 2px;\n+\n+            &:last-child {\n+                margin-bottom: 0;\n+            }\n         }\n     }\n \n     p {\n"
+                },
+                {
+                    "date": 1730624378858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,13 @@\n         font-family: \"Unbounded\", sans-serif;\n         margin-bottom: 40px;\n         text-transform: uppercase;\n     }\n+\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n }\n \n .continfblock {\n     margin-bottom: 40px;\n@@ -47,5 +52,15 @@\n         line-height: 135%;\n         font-family: \"ruberoid\";\n         margin: 0;\n     }\n+}\n+\n+.contactwelcomesect__bg {\n+    width: 100%;\n+    height: 100%;\n+    object-fit: cover;\n+    object-position: 0 center;\n+    position: absolute;\n+    left: 0;\n+    top: 0;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624389151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n .contactwelcomesect {\n     padding: 60px 0;\n+    position: relative;\n \n     h1 {\n         color: #fff;\n         font-size: 40px;\n"
+                },
+                {
+                    "date": 1730624448116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .contactwelcomesect {\n     padding: 60px 0;\n     position: relative;\n+    overflow: hidden;\n \n     h1 {\n         color: #fff;\n         font-size: 40px;\n@@ -15,8 +16,12 @@\n     .container {\n         position: relative;\n         z-index: 1;\n     }\n+\n+    .col-12.mt20 {\n+        margin-top: 20px;\n+    }\n }\n \n .continfblock {\n     margin-bottom: 40px;\n"
+                },
+                {
+                    "date": 1730624492770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,5 +68,13 @@\n     object-position: 0 center;\n     position: absolute;\n     left: 0;\n     top: 0;\n+}\n+\n+.genconttext {\n+    margin: 0;\n+    color: #C4C4C4;\n+    font-size: 14px;\n+    line-height: 135%;\n+    font-family: \"ruberoid\";\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624608078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,5 +76,9 @@\n     color: #C4C4C4;\n     font-size: 14px;\n     line-height: 135%;\n     font-family: \"ruberoid\";\n+}\n+\n+.commander.ourteam {\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624762556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,6 +79,8 @@\n     font-family: \"ruberoid\";\n }\n \n .commander.ourteam {\n-\n+    .titlename {\n+        color: #42795C;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624828540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,5 +82,9 @@\n .commander.ourteam {\n     .titlename {\n         color: #42795C;\n     }\n+\n+    p {\n+        margin-bottom: 20px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624834575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,6 +85,10 @@\n     }\n \n     p {\n         margin-bottom: 20px;\n+\n+        &:last-child {\n+            margin-bottom: 0;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624844748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,95 @@\n+.contactwelcomesect {\n+    padding: 60px 0;\n+    position: relative;\n+    overflow: hidden;\n+\n+    h1 {\n+        color: #fff;\n+        font-size: 40px;\n+        line-height: 120%;\n+        font-weight: 500;\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 40px;\n+        text-transform: uppercase;\n+    }\n+\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n+\n+    .col-12.mt20 {\n+        margin-top: 20px;\n+    }\n+}\n+\n+.continfblock {\n+    margin-bottom: 40px;\n+\n+    .title {\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 16px;\n+        color: #F5F5F5;\n+        font-size: 24px;\n+        line-height: 120%;\n+    }\n+\n+    ul {\n+        margin: 0;\n+        list-style-type: disc;\n+        padding: 0 0 0 20px;\n+\n+        li {\n+            color: #C4C4C4;\n+            font-family: \"ruberoid\";\n+            font-size: 16px;\n+            line-height: 135%;\n+            margin-bottom: 2px;\n+\n+            &:last-child {\n+                margin-bottom: 0;\n+            }\n+        }\n+    }\n+\n+    p {\n+        color: #C4C4C4;\n+        font-size: 16px;\n+        line-height: 135%;\n+        font-family: \"ruberoid\";\n+        margin: 0;\n+    }\n+}\n+\n+.contactwelcomesect__bg {\n+    width: 100%;\n+    height: 100%;\n+    object-fit: cover;\n+    object-position: 0 center;\n+    position: absolute;\n+    left: 0;\n+    top: 0;\n+}\n+\n+.genconttext {\n+    margin: 0;\n+    color: #C4C4C4;\n+    font-size: 14px;\n+    line-height: 135%;\n+    font-family: \"ruberoid\";\n+}\n+\n+.commander.ourteam {\n+    .titlename {\n+        color: #42795C;\n+        margin-bottom: 24px;\n+    }\n+\n+    p {\n+        margin-bottom: 20px;\n+\n+        &:last-child {\n+            margin-bottom: 0;\n+        }\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730624871824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,105 +79,15 @@\n     font-family: \"ruberoid\";\n }\n \n .commander.ourteam {\n-    .titlename {\n-        color: #42795C;\n-        margin-bottom: 24px;\n+    .commander__info .commander__infoels {\n+        padding: 76px 40px;\n     }\n \n-    p {\n-        margin-bottom: 20px;\n-\n-        &:last-child {\n-            margin-bottom: 0;\n-        }\n-    }\n-}\n-.contactwelcomesect {\n-    padding: 60px 0;\n-    position: relative;\n-    overflow: hidden;\n-\n-    h1 {\n-        color: #fff;\n-        font-size: 40px;\n-        line-height: 120%;\n-        font-weight: 500;\n-        font-family: \"Unbounded\", sans-serif;\n-        margin-bottom: 40px;\n-        text-transform: uppercase;\n-    }\n-\n-    .container {\n-        position: relative;\n-        z-index: 1;\n-    }\n-\n-    .col-12.mt20 {\n-        margin-top: 20px;\n-    }\n-}\n-\n-.continfblock {\n-    margin-bottom: 40px;\n-\n-    .title {\n-        font-family: \"Unbounded\", sans-serif;\n-        margin-bottom: 16px;\n-        color: #F5F5F5;\n-        font-size: 24px;\n-        line-height: 120%;\n-    }\n-\n-    ul {\n-        margin: 0;\n-        list-style-type: disc;\n-        padding: 0 0 0 20px;\n-\n-        li {\n-            color: #C4C4C4;\n-            font-family: \"ruberoid\";\n-            font-size: 16px;\n-            line-height: 135%;\n-            margin-bottom: 2px;\n-\n-            &:last-child {\n-                margin-bottom: 0;\n-            }\n-        }\n-    }\n-\n-    p {\n-        color: #C4C4C4;\n-        font-size: 16px;\n-        line-height: 135%;\n-        font-family: \"ruberoid\";\n-        margin: 0;\n-    }\n-}\n-\n-.contactwelcomesect__bg {\n-    width: 100%;\n-    height: 100%;\n-    object-fit: cover;\n-    object-position: 0 center;\n-    position: absolute;\n-    left: 0;\n-    top: 0;\n-}\n-\n-.genconttext {\n-    margin: 0;\n-    color: #C4C4C4;\n-    font-size: 14px;\n-    line-height: 135%;\n-    font-family: \"ruberoid\";\n-}\n-\n-.commander.ourteam {\n     .titlename {\n         color: #42795C;\n+        margin-bottom: 24px;\n     }\n \n     p {\n         margin-bottom: 20px;\n"
+                },
+                {
+                    "date": 1730624895652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,8 +81,9 @@\n \n .commander.ourteam {\n     .commander__info .commander__infoels {\n         padding: 76px 40px;\n+        min-height: 575px;\n     }\n \n     .titlename {\n         color: #42795C;\n"
+                },
+                {
+                    "date": 1730624904786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,9 +81,9 @@\n \n .commander.ourteam {\n     .commander__info .commander__infoels {\n         padding: 76px 40px;\n-        min-height: 575px;\n+        min-height: 540px;\n     }\n \n     .titlename {\n         color: #42795C;\n"
+                },
+                {
+                    "date": 1730624971704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,19 @@\n \n     .col-12.mt20 {\n         margin-top: 20px;\n     }\n+\n+    &::after {\n+        content: \"\";\n+        position: absolute;\n+        left: 0;\n+        display: block;\n+        height: 8px;\n+        width: 100%;\n+        background: url(../img/lines.png) repeat-x;\n+        bottom: 0;\n+    }\n }\n \n .continfblock {\n     margin-bottom: 40px;\n"
+                },
+                {
+                    "date": 1730625066274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,5 +107,12 @@\n         &:last-child {\n             margin-bottom: 0;\n         }\n     }\n+}\n+\n+.about ourteam {\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625114653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,12 +106,16 @@\n \n         &:last-child {\n             margin-bottom: 0;\n         }\n+\n+        b {\n+            color: #fff;\n+        }\n     }\n }\n \n-.about ourteam {\n+.about.ourteam {\n     .container {\n         position: relative;\n         z-index: 1;\n     }\n"
+                },
+                {
+                    "date": 1730625233872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,5 +118,16 @@\n     .container {\n         position: relative;\n         z-index: 1;\n     }\n+\n+    &::after {\n+        content: \"\";\n+        position: absolute;\n+        left: 0;\n+        display: block;\n+        height: 8px;\n+        width: 100%;\n+        background: url(../img/lines.png) repeat-x;\n+        bottom: 0;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625251398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,8 +119,12 @@\n         position: relative;\n         z-index: 1;\n     }\n \n+    .likeh2 {\n+        margin-bottom: 0;\n+    }\n+\n     &::after {\n         content: \"\";\n         position: absolute;\n         left: 0;\n"
+                },
+                {
+                    "date": 1730625261874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,5 +133,9 @@\n         width: 100%;\n         background: url(../img/lines.png) repeat-x;\n         bottom: 0;\n     }\n+\n+    .aboutbox {\n+        margin-top: 56px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625292996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,5 +137,15 @@\n \n     .aboutbox {\n         margin-top: 56px;\n     }\n+\n+    .row {\n+        margin-left: -35px;\n+        margin-right: -35px;\n+\n+        .col-lg-6 {\n+            margin-left: 35px;\n+            margin-right: 35px;\n+        }\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625302486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,9 +143,9 @@\n         margin-left: -35px;\n         margin-right: -35px;\n \n         .col-lg-6 {\n-            margin-left: 35px;\n-            margin-right: 35px;\n+            padding-left: 35px;\n+            padding-right: 35px;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625339756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,8 +136,15 @@\n     }\n \n     .aboutbox {\n         margin-top: 56px;\n+\n+        .title {\n+            text-transform: uppercase;\n+            color: #fff;\n+            font-family: \"Unbounded\", sans-serif;\n+            font-weight: 500;\n+        }\n     }\n \n     .row {\n         margin-left: -35px;\n"
+                },
+                {
+                    "date": 1730625345375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,8 +142,9 @@\n             text-transform: uppercase;\n             color: #fff;\n             font-family: \"Unbounded\", sans-serif;\n             font-weight: 500;\n+            font-size: 24px;\n         }\n     }\n \n     .row {\n"
+                },
+                {
+                    "date": 1730625373823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,8 +143,10 @@\n             color: #fff;\n             font-family: \"Unbounded\", sans-serif;\n             font-weight: 500;\n             font-size: 24px;\n+            margin-bottom: 18px;\n+            line-height: 120%;\n         }\n     }\n \n     .row {\n"
+                },
+                {
+                    "date": 1730625402662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,11 +134,16 @@\n         background: url(../img/lines.png) repeat-x;\n         bottom: 0;\n     }\n \n-    .aboutbox {\n+    .col-lg-6 {\n         margin-top: 56px;\n+    }\n \n+    .aboutbox {\n+        \n+        height: 100%;\n+\n         .title {\n             text-transform: uppercase;\n             color: #fff;\n             font-family: \"Unbounded\", sans-serif;\n"
+                },
+                {
+                    "date": 1730625464915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,170 @@\n+.contactwelcomesect {\n+    padding: 60px 0;\n+    position: relative;\n+    overflow: hidden;\n+\n+    h1 {\n+        color: #fff;\n+        font-size: 40px;\n+        line-height: 120%;\n+        font-weight: 500;\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 40px;\n+        text-transform: uppercase;\n+    }\n+\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n+\n+    .col-12.mt20 {\n+        margin-top: 20px;\n+    }\n+\n+    &::after {\n+        content: \"\";\n+        position: absolute;\n+        left: 0;\n+        display: block;\n+        height: 8px;\n+        width: 100%;\n+        background: url(../img/lines.png) repeat-x;\n+        bottom: 0;\n+    }\n+}\n+\n+.continfblock {\n+    margin-bottom: 40px;\n+\n+    .title {\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 16px;\n+        color: #F5F5F5;\n+        font-size: 24px;\n+        line-height: 120%;\n+    }\n+\n+    ul {\n+        margin: 0;\n+        list-style-type: disc;\n+        padding: 0 0 0 20px;\n+\n+        li {\n+            color: #C4C4C4;\n+            font-family: \"ruberoid\";\n+            font-size: 16px;\n+            line-height: 135%;\n+            margin-bottom: 2px;\n+\n+            &:last-child {\n+                margin-bottom: 0;\n+            }\n+        }\n+    }\n+\n+    p {\n+        color: #C4C4C4;\n+        font-size: 16px;\n+        line-height: 135%;\n+        font-family: \"ruberoid\";\n+        margin: 0;\n+    }\n+}\n+\n+.contactwelcomesect__bg {\n+    width: 100%;\n+    height: 100%;\n+    object-fit: cover;\n+    object-position: 0 center;\n+    position: absolute;\n+    left: 0;\n+    top: 0;\n+}\n+\n+.genconttext {\n+    margin: 0;\n+    color: #C4C4C4;\n+    font-size: 14px;\n+    line-height: 135%;\n+    font-family: \"ruberoid\";\n+}\n+\n+.commander.ourteam {\n+    .commander__info .commander__infoels {\n+        padding: 76px 40px;\n+        min-height: 540px;\n+    }\n+\n+    .titlename {\n+        color: #42795C;\n+        margin-bottom: 24px;\n+    }\n+\n+    p {\n+        margin-bottom: 20px;\n+\n+        &:last-child {\n+            margin-bottom: 0;\n+        }\n+\n+        b {\n+            color: #fff;\n+        }\n+    }\n+}\n+\n+.about.ourteam {\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n+\n+    .likeh2 {\n+        margin-bottom: 0;\n+    }\n+\n+    &::after {\n+        content: \"\";\n+        position: absolute;\n+        left: 0;\n+        display: block;\n+        height: 8px;\n+        width: 100%;\n+        background: url(../img/lines.png) repeat-x;\n+        bottom: 0;\n+    }\n+\n+    .col-lg-6 {\n+        margin-top: 56px;\n+    }\n+\n+    .aboutbox {\n+        \n+        height: 100%;\n+\n+        .title {\n+            text-transform: uppercase;\n+            color: #fff;\n+            font-family: \"Unbounded\", sans-serif;\n+            font-weight: 500;\n+            font-size: 24px;\n+            margin-bottom: 18px;\n+            line-height: 120%;\n+        }\n+    }\n+\n+    .row {\n+        margin-left: -35px;\n+        margin-right: -35px;\n+\n+        .col-lg-6 {\n+            padding-left: 35px;\n+            padding-right: 35px;\n+        }\n+    }\n+}\n+\n+.faqsection.ourteam {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625471193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,170 @@\n+.contactwelcomesect {\n+    padding: 60px 0;\n+    position: relative;\n+    overflow: hidden;\n+\n+    h1 {\n+        color: #fff;\n+        font-size: 40px;\n+        line-height: 120%;\n+        font-weight: 500;\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 40px;\n+        text-transform: uppercase;\n+    }\n+\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n+\n+    .col-12.mt20 {\n+        margin-top: 20px;\n+    }\n+\n+    &::after {\n+        content: \"\";\n+        position: absolute;\n+        left: 0;\n+        display: block;\n+        height: 8px;\n+        width: 100%;\n+        background: url(../img/lines.png) repeat-x;\n+        bottom: 0;\n+    }\n+}\n+\n+.continfblock {\n+    margin-bottom: 40px;\n+\n+    .title {\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 16px;\n+        color: #F5F5F5;\n+        font-size: 24px;\n+        line-height: 120%;\n+    }\n+\n+    ul {\n+        margin: 0;\n+        list-style-type: disc;\n+        padding: 0 0 0 20px;\n+\n+        li {\n+            color: #C4C4C4;\n+            font-family: \"ruberoid\";\n+            font-size: 16px;\n+            line-height: 135%;\n+            margin-bottom: 2px;\n+\n+            &:last-child {\n+                margin-bottom: 0;\n+            }\n+        }\n+    }\n+\n+    p {\n+        color: #C4C4C4;\n+        font-size: 16px;\n+        line-height: 135%;\n+        font-family: \"ruberoid\";\n+        margin: 0;\n+    }\n+}\n+\n+.contactwelcomesect__bg {\n+    width: 100%;\n+    height: 100%;\n+    object-fit: cover;\n+    object-position: 0 center;\n+    position: absolute;\n+    left: 0;\n+    top: 0;\n+}\n+\n+.genconttext {\n+    margin: 0;\n+    color: #C4C4C4;\n+    font-size: 14px;\n+    line-height: 135%;\n+    font-family: \"ruberoid\";\n+}\n+\n+.commander.ourteam {\n+    .commander__info .commander__infoels {\n+        padding: 76px 40px;\n+        min-height: 540px;\n+    }\n+\n+    .titlename {\n+        color: #42795C;\n+        margin-bottom: 24px;\n+    }\n+\n+    p {\n+        margin-bottom: 20px;\n+\n+        &:last-child {\n+            margin-bottom: 0;\n+        }\n+\n+        b {\n+            color: #fff;\n+        }\n+    }\n+}\n+\n+.about.ourteam {\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n+\n+    .likeh2 {\n+        margin-bottom: 0;\n+    }\n+\n+    &::after {\n+        content: \"\";\n+        position: absolute;\n+        left: 0;\n+        display: block;\n+        height: 8px;\n+        width: 100%;\n+        background: url(../img/lines.png) repeat-x;\n+        bottom: 0;\n+    }\n+\n+    .col-lg-6 {\n+        margin-top: 56px;\n+    }\n+\n+    .aboutbox {\n+        \n+        height: 100%;\n+\n+        .title {\n+            text-transform: uppercase;\n+            color: #fff;\n+            font-family: \"Unbounded\", sans-serif;\n+            font-weight: 500;\n+            font-size: 24px;\n+            margin-bottom: 18px;\n+            line-height: 120%;\n+        }\n+    }\n+\n+    .row {\n+        margin-left: -35px;\n+        margin-right: -35px;\n+\n+        .col-lg-6 {\n+            padding-left: 35px;\n+            padding-right: 35px;\n+        }\n+    }\n+}\n+\n+.faqsection.ourteam {\n+    background: #000201;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625532847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -166,341 +166,22 @@\n }\n \n .faqsection.ourteam {\n     background: #000201;\n-}\n-.contactwelcomesect {\n-    padding: 60px 0;\n-    position: relative;\n-    overflow: hidden;\n \n-    h1 {\n-        color: #fff;\n-        font-size: 40px;\n-        line-height: 120%;\n-        font-weight: 500;\n-        font-family: \"Unbounded\", sans-serif;\n-        margin-bottom: 40px;\n-        text-transform: uppercase;\n-    }\n-\n-    .container {\n-        position: relative;\n-        z-index: 1;\n-    }\n-\n-    .col-12.mt20 {\n-        margin-top: 20px;\n-    }\n-\n-    &::after {\n-        content: \"\";\n-        position: absolute;\n-        left: 0;\n-        display: block;\n-        height: 8px;\n-        width: 100%;\n-        background: url(../img/lines.png) repeat-x;\n-        bottom: 0;\n-    }\n-}\n-\n-.continfblock {\n-    margin-bottom: 40px;\n-\n     .title {\n-        font-family: \"Unbounded\", sans-serif;\n-        margin-bottom: 16px;\n-        color: #F5F5F5;\n-        font-size: 24px;\n-        line-height: 120%;\n-    }\n-\n-    ul {\n-        margin: 0;\n-        list-style-type: disc;\n-        padding: 0 0 0 20px;\n-\n-        li {\n-            color: #C4C4C4;\n-            font-family: \"ruberoid\";\n-            font-size: 16px;\n-            line-height: 135%;\n-            margin-bottom: 2px;\n-\n-            &:last-child {\n-                margin-bottom: 0;\n-            }\n-        }\n-    }\n-\n-    p {\n-        color: #C4C4C4;\n-        font-size: 16px;\n-        line-height: 135%;\n-        font-family: \"ruberoid\";\n-        margin: 0;\n-    }\n-}\n-\n-.contactwelcomesect__bg {\n-    width: 100%;\n-    height: 100%;\n-    object-fit: cover;\n-    object-position: 0 center;\n-    position: absolute;\n-    left: 0;\n-    top: 0;\n-}\n-\n-.genconttext {\n-    margin: 0;\n-    color: #C4C4C4;\n-    font-size: 14px;\n-    line-height: 135%;\n-    font-family: \"ruberoid\";\n-}\n-\n-.commander.ourteam {\n-    .commander__info .commander__infoels {\n-        padding: 76px 40px;\n-        min-height: 540px;\n-    }\n-\n-    .titlename {\n         color: #42795C;\n-        margin-bottom: 24px;\n-    }\n-\n-    p {\n-        margin-bottom: 20px;\n-\n-        &:last-child {\n-            margin-bottom: 0;\n-        }\n-\n-        b {\n-            color: #fff;\n-        }\n-    }\n-}\n-\n-.about.ourteam {\n-    .container {\n-        position: relative;\n-        z-index: 1;\n-    }\n-\n-    .likeh2 {\n-        margin-bottom: 0;\n-    }\n-\n-    &::after {\n-        content: \"\";\n-        position: absolute;\n-        left: 0;\n-        display: block;\n-        height: 8px;\n-        width: 100%;\n-        background: url(../img/lines.png) repeat-x;\n-        bottom: 0;\n-    }\n-\n-    .col-lg-6 {\n-        margin-top: 56px;\n-    }\n-\n-    .aboutbox {\n-        \n-        height: 100%;\n-\n-        .title {\n-            text-transform: uppercase;\n-            color: #fff;\n-            font-family: \"Unbounded\", sans-serif;\n-            font-weight: 500;\n-            font-size: 24px;\n-            margin-bottom: 18px;\n-            line-height: 120%;\n-        }\n-    }\n-\n-    .row {\n-        margin-left: -35px;\n-        margin-right: -35px;\n-\n-        .col-lg-6 {\n-            padding-left: 35px;\n-            padding-right: 35px;\n-        }\n-    }\n-}\n-\n-.faqsection.ourteam {\n-    \n-}\n-.contactwelcomesect {\n-    padding: 60px 0;\n-    position: relative;\n-    overflow: hidden;\n-\n-    h1 {\n-        color: #fff;\n         font-size: 40px;\n         line-height: 120%;\n+        font-family: \"Unbounded\", sans-serif;\n         font-weight: 500;\n-        font-family: \"Unbounded\", sans-serif;\n-        margin-bottom: 40px;\n-        text-transform: uppercase;\n     }\n \n-    .container {\n-        position: relative;\n-        z-index: 1;\n-    }\n \n-    .col-12.mt20 {\n-        margin-top: 20px;\n-    }\n \n-    &::after {\n-        content: \"\";\n-        position: absolute;\n-        left: 0;\n-        display: block;\n-        height: 8px;\n-        width: 100%;\n-        background: url(../img/lines.png) repeat-x;\n-        bottom: 0;\n-    }\n-}\n \n-.continfblock {\n-    margin-bottom: 40px;\n \n-    .title {\n-        font-family: \"Unbounded\", sans-serif;\n-        margin-bottom: 16px;\n-        color: #F5F5F5;\n-        font-size: 24px;\n-        line-height: 120%;\n-    }\n \n-    ul {\n-        margin: 0;\n-        list-style-type: disc;\n-        padding: 0 0 0 20px;\n \n-        li {\n-            color: #C4C4C4;\n-            font-family: \"ruberoid\";\n-            font-size: 16px;\n-            line-height: 135%;\n-            margin-bottom: 2px;\n \n-            &:last-child {\n-                margin-bottom: 0;\n-            }\n-        }\n-    }\n \n-    p {\n-        color: #C4C4C4;\n-        font-size: 16px;\n-        line-height: 135%;\n-        font-family: \"ruberoid\";\n-        margin: 0;\n-    }\n-}\n-\n-.contactwelcomesect__bg {\n-    width: 100%;\n-    height: 100%;\n-    object-fit: cover;\n-    object-position: 0 center;\n-    position: absolute;\n-    left: 0;\n-    top: 0;\n-}\n-\n-.genconttext {\n-    margin: 0;\n-    color: #C4C4C4;\n-    font-size: 14px;\n-    line-height: 135%;\n-    font-family: \"ruberoid\";\n-}\n-\n-.commander.ourteam {\n-    .commander__info .commander__infoels {\n-        padding: 76px 40px;\n-        min-height: 540px;\n-    }\n-\n-    .titlename {\n-        color: #42795C;\n-        margin-bottom: 24px;\n-    }\n-\n-    p {\n-        margin-bottom: 20px;\n-\n-        &:last-child {\n-            margin-bottom: 0;\n-        }\n-\n-        b {\n-            color: #fff;\n-        }\n-    }\n-}\n-\n-.about.ourteam {\n-    .container {\n-        position: relative;\n-        z-index: 1;\n-    }\n-\n-    .likeh2 {\n-        margin-bottom: 0;\n-    }\n-\n-    &::after {\n-        content: \"\";\n-        position: absolute;\n-        left: 0;\n-        display: block;\n-        height: 8px;\n-        width: 100%;\n-        background: url(../img/lines.png) repeat-x;\n-        bottom: 0;\n-    }\n-\n-    .col-lg-6 {\n-        margin-top: 56px;\n-    }\n-\n-    .aboutbox {\n-        \n-        height: 100%;\n-\n-        .title {\n-            text-transform: uppercase;\n-            color: #fff;\n-            font-family: \"Unbounded\", sans-serif;\n-            font-weight: 500;\n-            font-size: 24px;\n-            margin-bottom: 18px;\n-            line-height: 120%;\n-        }\n-    }\n-\n-    .row {\n-        margin-left: -35px;\n-        margin-right: -35px;\n-\n-        .col-lg-6 {\n-            padding-left: 35px;\n-            padding-right: 35px;\n-        }\n-    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625542162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -173,8 +173,9 @@\n         font-size: 40px;\n         line-height: 120%;\n         font-family: \"Unbounded\", sans-serif;\n         font-weight: 500;\n+        margin-bottom: 50px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1730625549824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,8 +174,9 @@\n         line-height: 120%;\n         font-family: \"Unbounded\", sans-serif;\n         font-weight: 500;\n         margin-bottom: 50px;\n+        text-transform: uppercase;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1730625610872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,13 +177,17 @@\n         margin-bottom: 50px;\n         text-transform: uppercase;\n     }\n \n+    .faqsection__left {\n+        p {\n+            color: #878787;\n+        }\n+    }\n \n \n \n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625620870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,8 +180,9 @@\n \n     .faqsection__left {\n         p {\n             color: #878787;\n+            font-size: 14px;\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1730625636528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,8 +181,9 @@\n     .faqsection__left {\n         p {\n             color: #878787;\n             font-size: 14px;\n+            max-width: 344px;\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1730625651951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -186,10 +186,12 @@\n         }\n     }\n \n \n+    .faqrow:after {\n+        background: #000201;\n+    }\n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625695197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -185,13 +185,15 @@\n             max-width: 344px;\n         }\n     }\n \n-\n     .faqrow:after {\n         background: #000201;\n     }\n \n+    .greenbtn {\n+        height: 52px;\n+        width: 174px;\n+    }\n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625701729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,8 +192,11 @@\n \n     .greenbtn {\n         height: 52px;\n         width: 174px;\n+        display: flex;\n+        align-items: center;\n+        justify-content: center;\n     }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625726004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,8 +195,9 @@\n         width: 174px;\n         display: flex;\n         align-items: center;\n         justify-content: center;\n+        margin-top: 30px;\n     }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625733923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,9 +189,9 @@\n     .faqrow:after {\n         background: #000201;\n     }\n \n-    .greenbtn {\n+    .faqsection__left  .greenbtn {\n         height: 52px;\n         width: 174px;\n         display: flex;\n         align-items: center;\n"
+                },
+                {
+                    "date": 1730625832409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n         margin-top: 56px;\n     }\n \n     .aboutbox {\n-        \n+\n         height: 100%;\n \n         .title {\n             text-transform: uppercase;\n@@ -189,9 +189,9 @@\n     .faqrow:after {\n         background: #000201;\n     }\n \n-    .faqsection__left  .greenbtn {\n+    .faqsection__left .greenbtn {\n         height: 52px;\n         width: 174px;\n         display: flex;\n         align-items: center;\n@@ -199,5 +199,9 @@\n         margin-top: 30px;\n     }\n \n \n+}\n+\n+@media(max-width:1399.8px) {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730625994686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,7 +201,16 @@\n \n \n }\n \n-@media(max-width:1399.8px) {\n+@media(max-width:1199.8px) {\n+    .faqsection.ourteam .title {\n+        font-size: 36px;\n+    }\n+\n+\n+\n+\n+\n+\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626016421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -206,11 +206,13 @@\n     .faqsection.ourteam .title {\n         font-size: 36px;\n     }\n \n+    .about.ourteam .aboutbox .title {\n+        font-size: 21px;\n+    }\n \n \n \n \n \n-    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626064083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,11 +208,14 @@\n     }\n \n     .about.ourteam .aboutbox .title {\n         font-size: 21px;\n+        margin-bottom: 10px;\n     }\n \n+    .faqsection.ourteam .faqsection__left p {\n+        max-width: 100%;\n+    }\n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626094141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -211,10 +211,14 @@\n         font-size: 21px;\n         margin-bottom: 10px;\n     }\n \n-    .faqsection.ourteam .faqsection__left p {\n-        max-width: 100%;\n+    .faqsection.ourteam .faqsection__left {\n+        margin-bottom: 30px;\n+\n+        p {\n+            max-width: 100%;\n+        }\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1730626102646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -212,9 +212,9 @@\n         margin-bottom: 10px;\n     }\n \n     .faqsection.ourteam .faqsection__left {\n-        margin-bottom: 30px;\n+        margin-bottom: 50px;\n \n         p {\n             max-width: 100%;\n         }\n"
+                },
+                {
+                    "date": 1730626141688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -221,5 +221,7 @@\n     }\n \n \n \n-}\n\\ No newline at end of file\n+}\n+\n+@media(max-width:991.8px) {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626190979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,5 +223,7 @@\n \n \n }\n \n-@media(max-width:991.8px) {}\n\\ No newline at end of file\n+@media(max-width:991.8px) {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626267200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         position: relative;\n         z-index: 1;\n     }\n \n-    .col-12.mt20 {\n+    .col-lg-12.mt20 {\n         margin-top: 20px;\n     }\n \n     &::after {\n@@ -224,6 +224,8 @@\n \n }\n \n @media(max-width:991.8px) {\n-    \n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626286393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,7 +225,9 @@\n }\n \n @media(max-width:991.8px) {\n \n+    .contactwelcomesect .col-lg-12.mt20 {\n+        margin-top: 0;\n+    }\n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626341728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -218,16 +218,18 @@\n         p {\n             max-width: 100%;\n         }\n     }\n-\n-\n-\n }\n \n @media(max-width:991.8px) {\n \n     .contactwelcomesect .col-lg-12.mt20 {\n         margin-top: 0;\n     }\n \n+    .commander.ourteam {\n+\n+    }\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626353748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -227,9 +227,11 @@\n         margin-top: 0;\n     }\n \n     .commander.ourteam {\n-\n+        .wrapblock {\n+            padding: 0;\n+        }\n     }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626362157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -230,8 +230,12 @@\n     .commander.ourteam {\n         .wrapblock {\n             padding: 0;\n         }\n+\n+        .commander__info .commanderimg {\n+            display: block;\n+        }\n     }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626382191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -233,8 +233,9 @@\n         }\n \n         .commander__info .commanderimg {\n             display: block;\n+            position: relative;\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1730626445228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,8 +201,12 @@\n \n \n }\n \n+.commander__info .commanderimg  {\n+    right: 0;\n+}\n+\n @media(max-width:1199.8px) {\n     .faqsection.ourteam .title {\n         font-size: 36px;\n     }\n"
+                },
+                {
+                    "date": 1730626455573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -203,8 +203,9 @@\n }\n \n .commander__info .commanderimg  {\n     right: 0;\n+    display: none;\n }\n \n @media(max-width:1199.8px) {\n     .faqsection.ourteam .title {\n"
+                },
+                {
+                    "date": 1730626463950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -202,10 +202,9 @@\n \n }\n \n .commander__info .commanderimg  {\n-    right: 0;\n-    display: none;\n+    right: 1px;\n }\n \n @media(max-width:1199.8px) {\n     .faqsection.ourteam .title {\n"
+                },
+                {
+                    "date": 1730626506167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,12 +201,22 @@\n \n \n }\n \n-.commander__info .commanderimg  {\n-    right: 1px;\n+.commander.ourteam {\n+    .commander__info .commanderimg  {\n+        right: 1px;\n+    }\n+    \n+    .commander__infoels {\n+        .row {\n+            position: relative;\n+            z-index: 2;\n+        }\n+    }\n }\n \n+\n @media(max-width:1199.8px) {\n     .faqsection.ourteam .title {\n         font-size: 36px;\n     }\n"
+                },
+                {
+                    "date": 1730626576710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -249,8 +249,14 @@\n         .commander__info .commanderimg {\n             display: block;\n             position: relative;\n         }\n+\n+        .commander__infoels {\n+            padding-bottom: 0;\n+        }\n     }\n \n \n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626583801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -250,9 +250,9 @@\n             display: block;\n             position: relative;\n         }\n \n-        .commander__infoels {\n+        .commander__info  .commander__infoels {\n             padding-bottom: 0;\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1730626612321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -251,9 +251,9 @@\n             position: relative;\n         }\n \n         .commander__info  .commander__infoels {\n-            padding-bottom: 0;\n+            padding: 70px 0 0 0;\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1730626626216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -253,8 +253,13 @@\n \n         .commander__info  .commander__infoels {\n             padding: 70px 0 0 0;\n         }\n+\n+        .wrapblock[ \n+            padding-left: 30px;\n+            padding-right: 30px;\n+        ]\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1730626638140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -254,12 +254,12 @@\n         .commander__info  .commander__infoels {\n             padding: 70px 0 0 0;\n         }\n \n-        .wrapblock[ \n+        .wrapblock {\n+            padding-right: 30px;\n             padding-left: 30px;\n-            padding-right: 30px;\n-        ]\n+        }\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1730626644544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -257,8 +257,9 @@\n \n         .wrapblock {\n             padding-right: 30px;\n             padding-left: 30px;\n+            padding-bottom: 30px;\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1730626657390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -251,9 +251,9 @@\n             position: relative;\n         }\n \n         .commander__info  .commander__infoels {\n-            padding: 70px 0 0 0;\n+            padding: 60px 0 0 0;\n         }\n \n         .wrapblock {\n             padding-right: 30px;\n@@ -261,8 +261,10 @@\n             padding-bottom: 30px;\n         }\n     }\n \n+    .commander.ourteam .commander__info .commanderimg {\n+        right: 0;\n+    }\n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626665983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -263,8 +263,9 @@\n     }\n \n     .commander.ourteam .commander__info .commanderimg {\n         right: 0;\n+        width: calc(100% - 2px);\n     }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626673088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -262,9 +262,9 @@\n         }\n     }\n \n     .commander.ourteam .commander__info .commanderimg {\n-        right: 0;\n+        right: -1px;\n         width: calc(100% - 2px);\n     }\n \n \n"
+                },
+                {
+                    "date": 1730626688372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,8 +241,10 @@\n         margin-top: 0;\n     }\n \n     .commander.ourteam {\n+        padding-bottom: 50px;\n+        \n         .wrapblock {\n             padding: 0;\n         }\n \n"
+                },
+                {
+                    "date": 1730626748005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -241,10 +241,10 @@\n         margin-top: 0;\n     }\n \n     .commander.ourteam {\n-        padding-bottom: 50px;\n-        \n+        padding-bottom: 70px;\n+\n         .wrapblock {\n             padding: 0;\n         }\n \n@@ -268,6 +268,9 @@\n         right: -1px;\n         width: calc(100% - 2px);\n     }\n \n+    .about.ourteam .aboutbox {\n+        height: auto;\n+    }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626756247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,7 +270,8 @@\n     }\n \n     .about.ourteam .aboutbox {\n         height: auto;\n+        margin-bottom: 0;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626818677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -273,5 +273,11 @@\n         height: auto;\n         margin-bottom: 0;\n     }\n \n+}\n+\n+@media(max-width:575.8px) {\n+    .contactwelcomesect h1 {\n+        font-size: 30px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626838926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -277,7 +277,11 @@\n }\n \n @media(max-width:575.8px) {\n     .contactwelcomesect h1 {\n-        font-size: 30px;\n+        font-size: 28px;\n     }\n+\n+    .contactwelcomesect {\n+        padding: 50px 0 60px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626847631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -278,10 +278,17 @@\n \n @media(max-width:575.8px) {\n     .contactwelcomesect h1 {\n         font-size: 28px;\n+        margin-bottom: 30px;\n     }\n \n     .contactwelcomesect {\n         padding: 50px 0 60px;\n     }\n+\n+\n+\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626856893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -286,9 +286,11 @@\n         padding: 50px 0 60px;\n     }\n \n \n+    .continfblock .title {\n+        font-size: 21px;\n+    }\n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626863896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -285,12 +285,19 @@\n     .contactwelcomesect {\n         padding: 50px 0 60px;\n     }\n \n-\n     .continfblock .title {\n-        font-size: 21px;\n+        font-size: 20.px;\n     }\n \n \n \n+\n+\n+\n+\n+\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626872416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -286,9 +286,10 @@\n         padding: 50px 0 60px;\n     }\n \n     .continfblock .title {\n-        font-size: 20.px;\n+        font-size: 20px;\n+        margin-bottom: 10px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1730626880538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -290,8 +290,11 @@\n         font-size: 20px;\n         margin-bottom: 10px;\n     }\n \n+    .continfblock ul li {\n+        font-size: 15px;\n+    }\n \n \n \n \n@@ -299,6 +302,5 @@\n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626896494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -291,16 +291,18 @@\n         margin-bottom: 10px;\n     }\n \n     .continfblock ul li {\n-        font-size: 15px;\n+        font-size: 14px;\n     }\n \n+    .continfblock {\n+        margin-bottom: 20px;\n+    }\n \n \n \n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626965076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -298,11 +298,13 @@\n     .continfblock {\n         margin-bottom: 20px;\n     }\n \n+    .commander.ourteam .commander__info .commander__infoels {\n+        padding-top: 40px;\n+    }\n \n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626975650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -302,9 +302,11 @@\n     .commander.ourteam .commander__info .commander__infoels {\n         padding-top: 40px;\n     }\n \n+    .commander.ourteam .wrapblock {\n+        padding: 0 20px 20px 20px;\n+    }\n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730626985735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -303,9 +303,9 @@\n         padding-top: 40px;\n     }\n \n     .commander.ourteam .wrapblock {\n-        padding: 0 20px 20px 20px;\n+        padding: 0 20px 30px 20px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1730626997387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -306,7 +306,9 @@\n     .commander.ourteam .wrapblock {\n         padding: 0 20px 30px 20px;\n     }\n \n+    .about.ourteam .col-lg-6 {\n+        margin-top: 40px;\n+    }\n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730627004391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -310,5 +310,8 @@\n     .about.ourteam .col-lg-6 {\n         margin-top: 40px;\n     }\n \n+    .about.ourteam .aboutbox .title {\n+        font-size: 18px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730627019604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -313,5 +313,9 @@\n \n     .about.ourteam .aboutbox .title {\n         font-size: 18px;\n     }\n+\n+    .faqsection.ourteam .title {\n+        font-size: 24px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730627025156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -316,6 +316,7 @@\n     }\n \n     .faqsection.ourteam .title {\n         font-size: 24px;\n+        margin-bottom: 30px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730627076425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -202,12 +202,12 @@\n \n }\n \n .commander.ourteam {\n-    .commander__info .commanderimg  {\n+    .commander__info .commanderimg {\n         right: 1px;\n     }\n-    \n+\n     .commander__infoels {\n         .row {\n             position: relative;\n             z-index: 2;\n@@ -252,9 +252,9 @@\n             display: block;\n             position: relative;\n         }\n \n-        .commander__info  .commander__infoels {\n+        .commander__info .commander__infoels {\n             padding: 60px 0 0 0;\n         }\n \n         .wrapblock {\n@@ -316,7 +316,13 @@\n     }\n \n     .faqsection.ourteam .title {\n         font-size: 24px;\n-        margin-bottom: 30px;\n+        margin-bottom: 20px;\n     }\n+}\n+\n+@media(max-width:360.8px) {\n+    .contactwelcomesect h1 {\n+        font-size: 25px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730627130882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -214,8 +214,13 @@\n         }\n     }\n }\n \n+@media(max-width:1599.8px) {\n+    .about.ourteam .aboutbox .title {\n+        font-size: 21px;\n+    }\n+}\n \n @media(max-width:1199.8px) {\n     .faqsection.ourteam .title {\n         font-size: 36px;\n"
+                },
+                {
+                    "date": 1730627163216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,14 +178,16 @@\n         text-transform: uppercase;\n     }\n \n     .faqsection__left {\n+        position: relative;\n         p {\n             color: #878787;\n             font-size: 14px;\n             max-width: 344px;\n         }\n     }\n+    \n \n     .faqrow:after {\n         background: #000201;\n     }\n"
+                },
+                {
+                    "date": 1730627169958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -179,8 +179,10 @@\n     }\n \n     .faqsection__left {\n         position: relative;\n+        top: 0;\n+        \n         p {\n             color: #878787;\n             font-size: 14px;\n             max-width: 344px;\n"
+                },
+                {
+                    "date": 1730627353784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,9 +180,9 @@\n \n     .faqsection__left {\n         position: relative;\n         top: 0;\n-        \n+\n         p {\n             color: #878787;\n             font-size: 14px;\n             max-width: 344px;\n@@ -333,5 +333,41 @@\n @media(max-width:360.8px) {\n     .contactwelcomesect h1 {\n         font-size: 25px;\n     }\n+}\n+\n+\n+\n+.modal {\n+    display: none; /* Hidden by default */\n+    position: fixed;\n+    top: 0;\n+    left: 0;\n+    width: 100%;\n+    height: 100%;\n+    background-color: rgba(0, 0, 0, 0.5);\n+    z-index: 1000;\n+}\n+\n+/* Modal Content */\n+.modal-content {\n+    position: relative;\n+    margin: 10% auto;\n+    padding: 20px;\n+    width: 80%;\n+    max-width: 500px;\n+    background-color: #fff;\n+    border-radius: 8px;\n+    text-align: center;\n+}\n+\n+/* Close Button (Cross) */\n+.close-btn {\n+    position: absolute;\n+    top: 10px;\n+    right: 10px;\n+    font-size: 24px;\n+    font-weight: bold;\n+    color: #333;\n+    cursor: pointer;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730627411890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -336,20 +336,28 @@\n     }\n }\n \n \n-\n+/* Modal Background */\n .modal {\n-    display: none; /* Hidden by default */\n+    display: none; /* Приховано за замовчуванням */\n     position: fixed;\n     top: 0;\n     left: 0;\n     width: 100%;\n     height: 100%;\n     background-color: rgba(0, 0, 0, 0.5);\n+    opacity: 0; /* Початкова прозорість */\n+    transition: opacity 0.3s ease; /* Плавний перехід */\n     z-index: 1000;\n }\n \n+/* Показати модальне вікно */\n+.modal.show {\n+    display: block;\n+    opacity: 1; /* Повна непрозорість */\n+}\n+\n /* Modal Content */\n .modal-content {\n     position: relative;\n     margin: 10% auto;\n@@ -358,10 +366,19 @@\n     max-width: 500px;\n     background-color: #fff;\n     border-radius: 8px;\n     text-align: center;\n+    transform: translateY(-20px); /* Початкова позиція трохи вище */\n+    opacity: 0;\n+    transition: transform 0.3s ease, opacity 0.3s ease;\n }\n \n+/* Показати модальний контент */\n+.modal.show .modal-content {\n+    transform: translateY(0); /* Рух до місця */\n+    opacity: 1; /* Повна непрозорість */\n+}\n+\n /* Close Button (Cross) */\n .close-btn {\n     position: absolute;\n     top: 10px;\n@@ -369,5 +386,5 @@\n     font-size: 24px;\n     font-weight: bold;\n     color: #333;\n     cursor: pointer;\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1730627443174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -346,9 +346,9 @@\n     width: 100%;\n     height: 100%;\n     background-color: rgba(0, 0, 0, 0.5);\n     opacity: 0; /* Початкова прозорість */\n-    transition: opacity 0.3s ease; /* Плавний перехід */\n+    transition: opacity 0.5s ease; /* Плавний перехід */\n     z-index: 1000;\n }\n \n /* Показати модальне вікно */\n"
+                },
+                {
+                    "date": 1730627448594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -368,9 +368,9 @@\n     border-radius: 8px;\n     text-align: center;\n     transform: translateY(-20px); /* Початкова позиція трохи вище */\n     opacity: 0;\n-    transition: transform 0.3s ease, opacity 0.3s ease;\n+    transition: transform 0.5s ease, opacity 0.5s ease;\n }\n \n /* Показати модальний контент */\n .modal.show .modal-content {\n"
+                },
+                {
+                    "date": 1730627464267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -368,9 +368,9 @@\n     border-radius: 8px;\n     text-align: center;\n     transform: translateY(-20px); /* Початкова позиція трохи вище */\n     opacity: 0;\n-    transition: transform 0.5s ease, opacity 0.5s ease;\n+    transition: transform 1s ease, opacity 1s ease;\n }\n \n /* Показати модальний контент */\n .modal.show .modal-content {\n"
+                },
+                {
+                    "date": 1730627473169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -346,9 +346,9 @@\n     width: 100%;\n     height: 100%;\n     background-color: rgba(0, 0, 0, 0.5);\n     opacity: 0; /* Початкова прозорість */\n-    transition: opacity 0.5s ease; /* Плавний перехід */\n+    transition: opacity 1s ease; /* Плавний перехід */\n     z-index: 1000;\n }\n \n /* Показати модальне вікно */\n"
+                },
+                {
+                    "date": 1730627505746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -334,57 +334,4 @@\n     .contactwelcomesect h1 {\n         font-size: 25px;\n     }\n }\n-\n-\n-/* Modal Background */\n-.modal {\n-    display: none; /* Приховано за замовчуванням */\n-    position: fixed;\n-    top: 0;\n-    left: 0;\n-    width: 100%;\n-    height: 100%;\n-    background-color: rgba(0, 0, 0, 0.5);\n-    opacity: 0; /* Початкова прозорість */\n-    transition: opacity 1s ease; /* Плавний перехід */\n-    z-index: 1000;\n-}\n-\n-/* Показати модальне вікно */\n-.modal.show {\n-    display: block;\n-    opacity: 1; /* Повна непрозорість */\n-}\n-\n-/* Modal Content */\n-.modal-content {\n-    position: relative;\n-    margin: 10% auto;\n-    padding: 20px;\n-    width: 80%;\n-    max-width: 500px;\n-    background-color: #fff;\n-    border-radius: 8px;\n-    text-align: center;\n-    transform: translateY(-20px); /* Початкова позиція трохи вище */\n-    opacity: 0;\n-    transition: transform 1s ease, opacity 1s ease;\n-}\n-\n-/* Показати модальний контент */\n-.modal.show .modal-content {\n-    transform: translateY(0); /* Рух до місця */\n-    opacity: 1; /* Повна непрозорість */\n-}\n-\n-/* Close Button (Cross) */\n-.close-btn {\n-    position: absolute;\n-    top: 10px;\n-    right: 10px;\n-    font-size: 24px;\n-    font-weight: bold;\n-    color: #333;\n-    cursor: pointer;\n-}\n"
+                },
+                {
+                    "date": 1730627511800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -336,13 +336,64 @@\n     }\n }\n \n \n+/* Modal Background */\n+.modal {\n+    visibility: hidden; /* Початково приховано */\n+    opacity: 0; /* Прозорість */\n+    position: fixed;\n+    top: 0;\n+    left: 0;\n+    width: 100%;\n+    height: 100%;\n+    background-color: rgba(0, 0, 0, 0.5);\n+    transition: visibility 0s, opacity 0.3s ease; /* Плавний перехід для opacity */\n+    z-index: 1000;\n+}\n \n+/* Показати модальне вікно */\n+.modal.show {\n+    visibility: visible; /* Робимо видимим */\n+    opacity: 1; /* Повна непрозорість */\n+}\n \n+/* Modal Content */\n+.modal-content {\n+    position: relative;\n+    margin: 10% auto;\n+    padding: 20px;\n+    width: 80%;\n+    max-width: 500px;\n+    background-color: #fff;\n+    border-radius: 8px;\n+    text-align: center;\n+    transform: translateY(-20px); /* Початкова позиція трохи вище */\n+    opacity: 0;\n+    transition: transform 0.3s ease, opacity 0.3s ease;\n+}\n \n+/* Показати модальний контент */\n+.modal.show .modal-content {\n+    transform: translateY(0); /* Рух до місця */\n+    opacity: 1; /* Повна непрозорість */\n+}\n \n+/* Close Button (Cross) */\n+.close-btn {\n+    position: absolute;\n+    top: 10px;\n+    right: 10px;\n+    font-size: 24px;\n+    font-weight: bold;\n+    color: #333;\n+    cursor: pointer;\n+}\n \n \n \n \n \n+\n+\n+\n+\n"
+                },
+                {
+                    "date": 1730627784704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,367 @@\n+.contactwelcomesect {\n+    padding: 60px 0;\n+    position: relative;\n+    overflow: hidden;\n+\n+    h1 {\n+        color: #fff;\n+        font-size: 40px;\n+        line-height: 120%;\n+        font-weight: 500;\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 40px;\n+        text-transform: uppercase;\n+    }\n+\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n+\n+    .col-lg-12.mt20 {\n+        margin-top: 20px;\n+    }\n+\n+    &::after {\n+        content: \"\";\n+        position: absolute;\n+        left: 0;\n+        display: block;\n+        height: 8px;\n+        width: 100%;\n+        background: url(../img/lines.png) repeat-x;\n+        bottom: 0;\n+    }\n+}\n+\n+.continfblock {\n+    margin-bottom: 40px;\n+\n+    .title {\n+        font-family: \"Unbounded\", sans-serif;\n+        margin-bottom: 16px;\n+        color: #F5F5F5;\n+        font-size: 24px;\n+        line-height: 120%;\n+    }\n+\n+    ul {\n+        margin: 0;\n+        list-style-type: disc;\n+        padding: 0 0 0 20px;\n+\n+        li {\n+            color: #C4C4C4;\n+            font-family: \"ruberoid\";\n+            font-size: 16px;\n+            line-height: 135%;\n+            margin-bottom: 2px;\n+\n+            &:last-child {\n+                margin-bottom: 0;\n+            }\n+        }\n+    }\n+\n+    p {\n+        color: #C4C4C4;\n+        font-size: 16px;\n+        line-height: 135%;\n+        font-family: \"ruberoid\";\n+        margin: 0;\n+    }\n+}\n+\n+.contactwelcomesect__bg {\n+    width: 100%;\n+    height: 100%;\n+    object-fit: cover;\n+    object-position: 0 center;\n+    position: absolute;\n+    left: 0;\n+    top: 0;\n+}\n+\n+.genconttext {\n+    margin: 0;\n+    color: #C4C4C4;\n+    font-size: 14px;\n+    line-height: 135%;\n+    font-family: \"ruberoid\";\n+}\n+\n+.commander.ourteam {\n+    .commander__info .commander__infoels {\n+        padding: 76px 40px;\n+        min-height: 540px;\n+    }\n+\n+    .titlename {\n+        color: #42795C;\n+        margin-bottom: 24px;\n+    }\n+\n+    p {\n+        margin-bottom: 20px;\n+\n+        &:last-child {\n+            margin-bottom: 0;\n+        }\n+\n+        b {\n+            color: #fff;\n+        }\n+    }\n+}\n+\n+.about.ourteam {\n+    .container {\n+        position: relative;\n+        z-index: 1;\n+    }\n+\n+    .likeh2 {\n+        margin-bottom: 0;\n+    }\n+\n+    &::after {\n+        content: \"\";\n+        position: absolute;\n+        left: 0;\n+        display: block;\n+        height: 8px;\n+        width: 100%;\n+        background: url(../img/lines.png) repeat-x;\n+        bottom: 0;\n+    }\n+\n+    .col-lg-6 {\n+        margin-top: 56px;\n+    }\n+\n+    .aboutbox {\n+\n+        height: 100%;\n+\n+        .title {\n+            text-transform: uppercase;\n+            color: #fff;\n+            font-family: \"Unbounded\", sans-serif;\n+            font-weight: 500;\n+            font-size: 24px;\n+            margin-bottom: 18px;\n+            line-height: 120%;\n+        }\n+    }\n+\n+    .row {\n+        margin-left: -35px;\n+        margin-right: -35px;\n+\n+        .col-lg-6 {\n+            padding-left: 35px;\n+            padding-right: 35px;\n+        }\n+    }\n+}\n+\n+.faqsection.ourteam {\n+    background: #000201;\n+\n+    .title {\n+        color: #42795C;\n+        font-size: 40px;\n+        line-height: 120%;\n+        font-family: \"Unbounded\", sans-serif;\n+        font-weight: 500;\n+        margin-bottom: 50px;\n+        text-transform: uppercase;\n+    }\n+\n+    .faqsection__left {\n+        position: relative;\n+        top: 0;\n+\n+        p {\n+            color: #878787;\n+            font-size: 14px;\n+            max-width: 344px;\n+        }\n+    }\n+    \n+\n+    .faqrow:after {\n+        background: #000201;\n+    }\n+\n+    .faqsection__left .greenbtn {\n+        height: 52px;\n+        width: 174px;\n+        display: flex;\n+        align-items: center;\n+        justify-content: center;\n+        margin-top: 30px;\n+    }\n+\n+\n+}\n+\n+.commander.ourteam {\n+    .commander__info .commanderimg {\n+        right: 1px;\n+    }\n+\n+    .commander__infoels {\n+        .row {\n+            position: relative;\n+            z-index: 2;\n+        }\n+    }\n+}\n+\n+@media(max-width:1599.8px) {\n+    .about.ourteam .aboutbox .title {\n+        font-size: 21px;\n+    }\n+}\n+\n+@media(max-width:1199.8px) {\n+    .faqsection.ourteam .title {\n+        font-size: 36px;\n+    }\n+\n+    .about.ourteam .aboutbox .title {\n+        font-size: 21px;\n+        margin-bottom: 10px;\n+    }\n+\n+    .faqsection.ourteam .faqsection__left {\n+        margin-bottom: 50px;\n+\n+        p {\n+            max-width: 100%;\n+        }\n+    }\n+}\n+\n+@media(max-width:991.8px) {\n+\n+    .contactwelcomesect .col-lg-12.mt20 {\n+        margin-top: 0;\n+    }\n+\n+    .commander.ourteam {\n+        padding-bottom: 70px;\n+\n+        .wrapblock {\n+            padding: 0;\n+        }\n+\n+        .commander__info .commanderimg {\n+            display: block;\n+            position: relative;\n+        }\n+\n+        .commander__info .commander__infoels {\n+            padding: 60px 0 0 0;\n+        }\n+\n+        .wrapblock {\n+            padding-right: 30px;\n+            padding-left: 30px;\n+            padding-bottom: 30px;\n+        }\n+    }\n+\n+    .commander.ourteam .commander__info .commanderimg {\n+        right: -1px;\n+        width: calc(100% - 2px);\n+    }\n+\n+    .about.ourteam .aboutbox {\n+        height: auto;\n+        margin-bottom: 0;\n+    }\n+\n+}\n+\n+@media(max-width:575.8px) {\n+    .contactwelcomesect h1 {\n+        font-size: 28px;\n+        margin-bottom: 30px;\n+    }\n+\n+    .contactwelcomesect {\n+        padding: 50px 0 60px;\n+    }\n+\n+    .continfblock .title {\n+        font-size: 20px;\n+        margin-bottom: 10px;\n+    }\n+\n+    .continfblock ul li {\n+        font-size: 14px;\n+    }\n+\n+    .continfblock {\n+        margin-bottom: 20px;\n+    }\n+\n+    .commander.ourteam .commander__info .commander__infoels {\n+        padding-top: 40px;\n+    }\n+\n+    .commander.ourteam .wrapblock {\n+        padding: 0 20px 30px 20px;\n+    }\n+\n+    .about.ourteam .col-lg-6 {\n+        margin-top: 40px;\n+    }\n+\n+    .about.ourteam .aboutbox .title {\n+        font-size: 18px;\n+    }\n+\n+    .faqsection.ourteam .title {\n+        font-size: 24px;\n+        margin-bottom: 20px;\n+    }\n+}\n+\n+@media(max-width:360.8px) {\n+    .contactwelcomesect h1 {\n+        font-size: 25px;\n+    }\n+}\n+\n+\n+.callbackform {\n+    .modal-dialog {\n+        max-width: 650px;\n+    }\n+\n+    .modal-content {\n+        background: #141314;\n+        border-radius: 0;\n+    }\n+\n+    .modal-body {\n+        padding: 32px;\n+    }\n+\n+\n+\n+\n+\n+    \n+}\n+\n+\n+\n+\n+\n+\n+\n+\n"
+                }
+            ],
+            "date": 1730623659699,
+            "name": "Commit-0",
+            "content": ".contactwelcomesect {\n    padding: 60px 0;\n}"
+        }
+    ]
+}

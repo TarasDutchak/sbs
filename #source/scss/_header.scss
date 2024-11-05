@@ -24,7 +24,7 @@ header.header {
         li {
             display: inline-block;
             vertical-align: middle;
-            margin-right: 28px;
+            margin-right: 20px;
 
             &:last-child {
                 margin-right: 0;
@@ -163,6 +163,12 @@ header nav {
                 }
             }
         }
+    }
+}
+
+@media(max-width:1199.8px) {
+    .header__nav ul li {
+        margin-right: 10px;
     }
 }
 

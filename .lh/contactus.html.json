@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 70,
+            "activePatchIndex": 71,
             "patches": [
                 {
                     "date": 1730623241520,
@@ -288,6 +288,10 @@
                 {
                     "date": 1730629094472,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -378,9 +378,9 @@\n         aria-hidden=\"true\">\n         <div class=\"modal-dialog modal-dialog-centered\">\n             <div class=\"modal-content\">\n                 <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\">\n-                    <img src=\"img/closemodal.svg\" alt=\"img\">\n+                    <img src=\"img/closemodal.svg\" alt=\"close\">\n                 </button>\n                 <div class=\"modal-body\">\n                     <p class=\"title\">Форма зворотного зв'язку для партнерів</p>\n                     <p>\n@@ -429,9 +429,9 @@\n                             </div>\n                         </div>\n                         <div class=\"col-12\">\n                             <button type=\"submit\" class=\"greenbtn btnel\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModal\">\n-                                <span>Зв’язатись</span>\n+                                <span>Відправити</span>\n                             </button>\n                         </div>\n                     </div>\n \n"
+                },
+                {
+                    "date": 1730721099477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -434,10 +434,8 @@\n                             </button>\n                         </div>\n                     </div>\n \n-\n-\n                 </div>\n             </div>\n         </div>\n     </div>\n"
                 }
             ],
             "date": 1730623241520,

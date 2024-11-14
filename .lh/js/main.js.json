@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 65,
+            "activePatchIndex": 66,
             "patches": [
                 {
                     "date": 1722839935236,
@@ -268,6 +268,10 @@
                 {
                     "date": 1730628838633,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,9 +172,10 @@\n         });\r\n     }\r\n     if ($('.styledselectmodal').length) {\r\n         $('.styledselectmodal').select2({\r\n-            dropdownParent: $(\"#exampleModal\")\r\n+            dropdownParent: $(\"#exampleModal\"),\r\n+            minimumResultsForSearch: Infinity,\r\n         });\r\n     }\r\n \r\n     $('.nextbtn .greenbtn:not(.submit-btn)').click(function (e) {\r\n"
+                },
+                {
+                    "date": 1731148412647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,13 +177,13 @@\n             minimumResultsForSearch: Infinity,\r\n         });\r\n     }\r\n \r\n-    $('.nextbtn .greenbtn:not(.submit-btn)').click(function (e) {\r\n-        e.preventDefault();\r\n-        $(this).parents('.formstep').addClass('hide');\r\n-        $(this).parents('.formstep').next('.formstep').removeClass('hide');\r\n-    })\r\n+    // $('.nextbtn .greenbtn:not(.submit-btn)').click(function (e) {\r\n+    //     e.preventDefault();\r\n+    //     $(this).parents('.formstep').addClass('hide');\r\n+    //     $(this).parents('.formstep').next('.formstep').removeClass('hide');\r\n+    // })\r\n \r\n     $('.formstep .title').click(function () {\r\n         $('.formstep').addClass('hide');\r\n         $(this).parents('.formstep').removeClass('hide');\r\n"
                 }
             ],
             "date": 1722839935236,

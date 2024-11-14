@@ -178,11 +178,11 @@ $(document).ready(function () {
         });
     }
 
-    $('.nextbtn .greenbtn:not(.submit-btn)').click(function (e) {
-        e.preventDefault();
-        $(this).parents('.formstep').addClass('hide');
-        $(this).parents('.formstep').next('.formstep').removeClass('hide');
-    })
+    // $('.nextbtn .greenbtn:not(.submit-btn)').click(function (e) {
+    //     e.preventDefault();
+    //     $(this).parents('.formstep').addClass('hide');
+    //     $(this).parents('.formstep').next('.formstep').removeClass('hide');
+    // })
 
     $('.formstep .title').click(function () {
         $('.formstep').addClass('hide');

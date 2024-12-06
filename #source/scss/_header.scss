@@ -9,6 +9,11 @@ header.header {
     width: 100%;
     z-index: 13;
     transition: 0.5s;
+
+    .greenbtn {
+        min-width: 138px;
+        text-align: center;
+    }
 }
 
 .header__logo {
@@ -34,7 +39,7 @@ header.header {
                 color: #fff;
                 font-size: 14px;
                 font-weight: 300;
-                font-family: "Unbounded", sans-serif;
+                font-family: "uaf";
                 transition: 0.3s;
                 position: relative;
 
@@ -84,7 +89,7 @@ header nav {
         display: flex;
         align-items: center;
         text-transform: uppercase;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         font-size: 14px;
         font-weight: 300;
         line-height: 140%;
@@ -145,8 +150,9 @@ header nav {
 
         li {
             width: 100%;
+
             a {
-                font-family: "Unbounded", sans-serif;
+                font-family: "uaf";
                 font-size: 14px;
                 font-weight: 300;
                 line-height: 140%;

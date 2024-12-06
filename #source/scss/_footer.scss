@@ -47,6 +47,38 @@ footer.footer ul {
     z-index: 6;
 }
 
+// new
+footer.footer {
+    .footer__cooperation {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        align-items: center;
+    
+        p {
+            margin: 0;
+            font-family: "uaf";
+            font-size: 16px;
+            line-height: 140%;
+            color: #C4C4C4;
+            padding-right: 24px;
+        }
+    
+        .greenbtn {
+            max-width: 138px;
+            flex: 0 0 138px;
+            width: 100%;
+            height: 42px;
+            font-size: 14px;
+            font-family: "uaf";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
 @media(max-width:1199.8px) {
     footer.footer {
         padding: 50px 0;
@@ -81,4 +113,10 @@ footer.footer ul {
     .footertitle {
         max-width: 100%;
     }
+
+    // new
+    footer.footer .footer__cooperation {
+        justify-content: flex-start;
+    }
+
 }

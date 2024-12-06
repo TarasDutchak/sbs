@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 71,
+            "activePatchIndex": 72,
             "patches": [
                 {
                     "date": 1730623241520,
@@ -292,6 +292,10 @@
                 {
                     "date": 1730721099477,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -434,10 +434,8 @@\n                             </button>\n                         </div>\n                     </div>\n \n-\n-\n                 </div>\n             </div>\n         </div>\n     </div>\n"
+                },
+                {
+                    "date": 1733416836231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,9 +138,9 @@\n                     </div>\n                 </div>\n             </section>\n \n-            <section class=\"about ourteam\">\n+            <!-- <section class=\"about ourteam\">\n                 <img class=\"aboutbg\" src=\"img/noise2.png\" alt=\"\">\n                 <div class=\"container\">\n                     <div class=\"likeh2\">\n                         Як ми працюємо:<br>\n@@ -190,9 +190,9 @@\n                             </div>\n                         </div>\n                     </div>\n                 </div>\n-            </section>\n+            </section> -->\n \n             <section class=\"faqsection ourteam\">\n                 <div class=\"container\">\n                     <div class=\"row\">\n"
                 }
             ],
             "date": 1730623241520,

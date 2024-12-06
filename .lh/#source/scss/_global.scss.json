@@ -3,11 +3,47 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1729005999313,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733471870405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,9 @@\n     max-width: 100%;\r\n     background: rgba(#84F7A0, 0.1);\r\n     transition: 0.3s;\r\n     position: relative;\r\n+    font-family: \"uaf\";\r\n \r\n     &:hover {\r\n         color: #fff;\r\n         background: rgba(#84F7A0, 0.3);\r\n"
+                },
+                {
+                    "date": 1733471889446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n // color: var(--dark);\r\n \r\n @mixin text {\r\n     font-size: 14px;\r\n-    font-family: \"Unbounded\", sans-serif;\r\n     font-weight: 300;\r\n }\r\n \r\n @media(min-width:1400px) {\r\n"
+                },
+                {
+                    "date": 1733471909734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n .greenbtn {\r\n     @include text;\r\n     color: #fff;\r\n-    padding: 12px;\r\n+    padding: 12px 12px;\r\n     display: inline-block;\r\n     max-width: 100%;\r\n     background: rgba(#84F7A0, 0.1);\r\n     transition: 0.3s;\r\n"
+                },
+                {
+                    "date": 1733471961601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,9 @@\n     background: rgba(#84F7A0, 0.1);\r\n     transition: 0.3s;\r\n     position: relative;\r\n     font-family: \"uaf\";\r\n+  \r\n \r\n     &:hover {\r\n         color: #fff;\r\n         background: rgba(#84F7A0, 0.3);\r\n"
+                },
+                {
+                    "date": 1733471968698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,11 @@\n     background: rgba(#84F7A0, 0.1);\r\n     transition: 0.3s;\r\n     position: relative;\r\n     font-family: \"uaf\";\r\n-  \r\n+    // min-height: 42px;\r\n+    min-width: 138px;\r\n+    text-align: center;\r\n \r\n     &:hover {\r\n         color: #fff;\r\n         background: rgba(#84F7A0, 0.3);\r\n"
+                },
+                {
+                    "date": 1733471980605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \r\n .greenbtn {\r\n     @include text;\r\n     color: #fff;\r\n-    padding: 12px 12px;\r\n+    padding: 10px 12px;\r\n     display: inline-block;\r\n     max-width: 100%;\r\n     background: rgba(#84F7A0, 0.1);\r\n     transition: 0.3s;\r\n"
+                },
+                {
+                    "date": 1733472064827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     overflow: initial;\r\n }\r\n \r\n body {\r\n-    font-family: \"ruberoid\";\r\n+    font-family: \"uaf\";\r\n     font-size: 16px;\r\n     line-height: 140%;\r\n     background: #111011;\r\n     min-height: 100vh;\r\n"
+                },
+                {
+                    "date": 1733472124082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,27 +159,27 @@\n }\r\n \r\n h2 {\r\n     font-size: 40px;\r\n-    font-family: \"Unbounded\", sans-serif;\r\n+    font-family: \"uaf\";\r\n     font-weight: 500;\r\n     line-height: 120%;\r\n     color: #42795C;\r\n     text-transform: uppercase;\r\n }\r\n \r\n .likeh2 {\r\n     font-size: 40px;\r\n-    font-family: \"Unbounded\", sans-serif;\r\n+    font-family: \"uaf\";\r\n     font-weight: 500;\r\n     line-height: 120%;\r\n     color: #42795C;\r\n     text-transform: uppercase;\r\n }\r\n \r\n h3 {\r\n     font-size: 40px;\r\n-    font-family: \"Unbounded\", sans-serif;\r\n+    font-family: \"uaf\";\r\n     font-weight: 500;\r\n     line-height: 120%;\r\n     color: #42795C;\r\n     text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1733472336735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,17 +58,16 @@\n \r\n .greenbtn {\r\n     @include text;\r\n     color: #fff;\r\n-    padding: 10px 12px;\r\n+    padding: 12px 12px;\r\n     display: inline-block;\r\n     max-width: 100%;\r\n     background: rgba(#84F7A0, 0.1);\r\n     transition: 0.3s;\r\n     position: relative;\r\n     font-family: \"uaf\";\r\n-    // min-height: 42px;\r\n-    min-width: 138px;\r\n+    \r\n     text-align: center;\r\n \r\n     &:hover {\r\n         color: #fff;\r\n"
                 }
             ],
             "date": 1729005999313,

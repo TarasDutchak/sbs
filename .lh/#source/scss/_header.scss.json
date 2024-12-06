@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1730832160057,
@@ -12,6 +12,22 @@
                 {
                     "date": 1730832267576,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n \r\n         li {\r\n             display: inline-block;\r\n             vertical-align: middle;\r\n-            margin-right: 24px;\r\n+            margin-right: 20px;\r\n \r\n             &:last-child {\r\n                 margin-right: 0;\r\n             }\r\n@@ -165,8 +165,14 @@\n         }\r\n     }\r\n }\r\n \r\n+@media(max-width:1199.8px) {\r\n+    .header__nav ul li {\r\n+        margin-right: 10px;\r\n+    }\r\n+}\r\n+\r\n @media(max-width:991.8px) {\r\n     .header__nav {\r\n         // display: none;\r\n         position: fixed;\r\n"
+                },
+                {
+                    "date": 1733471791548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n             a {\r\n                 color: #fff;\r\n                 font-size: 14px;\r\n                 font-weight: 300;\r\n-                font-family: \"Unbounded\", sans-serif;\r\n+                font-family: \"uaf\";\r\n                 transition: 0.3s;\r\n                 position: relative;\r\n \r\n                 &::after {\r\n"
+                },
+                {
+                    "date": 1733471832925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     span {\r\n         display: flex;\r\n         align-items: center;\r\n         text-transform: uppercase;\r\n-        font-family: \"Unbounded\", sans-serif;\r\n+        font-family: \"uaf\";\r\n         font-size: 14px;\r\n         font-weight: 300;\r\n         line-height: 140%;\r\n         color: #fff;\r\n"
+                },
+                {
+                    "date": 1733472174121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n \r\n         li {\r\n             width: 100%;\r\n             a {\r\n-                font-family: \"Unbounded\", sans-serif;\r\n+                font-family: \"uaf\";\r\n                 font-size: 14px;\r\n                 font-weight: 300;\r\n                 line-height: 140%;\r\n                 padding: 2px 2px 2px 6px;\r\n"
+                },
+                {
+                    "date": 1733472353430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,13 @@\n     top: 0;\r\n     width: 100%;\r\n     z-index: 13;\r\n     transition: 0.5s;\r\n+\r\n+    .greenbtn {\r\n+        min-width: 138px;\r\n+    text-align: center;\r\n+    }\r\n }\r\n \r\n .header__logo {\r\n     img {\r\n"
                 }
             ],
             "date": 1730832160057,

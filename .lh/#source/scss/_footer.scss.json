@@ -1,0 +1,70 @@
+{
+    "sourceFile": "#source/scss/_footer.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1733417096242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733417110322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,11 +49,12 @@\n \r\n // new\r\n .footer__cooperation {\r\n     display: flex;\r\n-    \r\n+\r\n     p {\r\n         margin: 0;\r\n+        font-family: \"uaf\";\r\n     }\r\n \r\n     .greenbtn {\r\n \r\n"
+                },
+                {
+                    "date": 1733417115622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n \r\n     p {\r\n         margin: 0;\r\n         font-family: \"uaf\";\r\n+        font-size: 16px;\r\n     }\r\n \r\n     .greenbtn {\r\n \r\n"
+                },
+                {
+                    "date": 1733417127494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,10 @@\n     p {\r\n         margin: 0;\r\n         font-family: \"uaf\";\r\n         font-size: 16px;\r\n+        line-height: 140%;\r\n+        color: #C4C4C4;\r\n     }\r\n \r\n     .greenbtn {\r\n \r\n"
+                },
+                {
+                    "date": 1733417145539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,24 +47,27 @@\n     z-index: 6;\r\n }\r\n \r\n // new\r\n-.footer__cooperation {\r\n-    display: flex;\r\n-\r\n-    p {\r\n-        margin: 0;\r\n-        font-family: \"uaf\";\r\n-        font-size: 16px;\r\n-        line-height: 140%;\r\n-        color: #C4C4C4;\r\n+footer.footer {\r\n+    .footer__cooperation {\r\n+        display: flex;\r\n+    \r\n+        p {\r\n+            margin: 0;\r\n+            font-family: \"uaf\";\r\n+            font-size: 16px;\r\n+            line-height: 140%;\r\n+            color: #C4C4C4;\r\n+        }\r\n+    \r\n+        .greenbtn {\r\n+    \r\n+        }\r\n     }\r\n+}\r\n \r\n-    .greenbtn {\r\n \r\n-    }\r\n-}\r\n-\r\n @media(max-width:1199.8px) {\r\n     footer.footer {\r\n         padding: 50px 0;\r\n \r\n"
+                },
+                {
+                    "date": 1733417206349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,9 @@\n // new\r\n footer.footer {\r\n     .footer__cooperation {\r\n         display: flex;\r\n+        justify-content: flex-end;\r\n     \r\n         p {\r\n             margin: 0;\r\n             font-family: \"uaf\";\r\n"
+                },
+                {
+                    "date": 1733417218991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n footer.footer {\r\n     .footer__cooperation {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n+        margin-top: 30px;\r\n     \r\n         p {\r\n             margin: 0;\r\n             font-family: \"uaf\";\r\n"
+                },
+                {
+                    "date": 1733417227086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n     .footer__cooperation {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n         margin-top: 30px;\r\n+        align-items: center;\r\n     \r\n         p {\r\n             margin: 0;\r\n             font-family: \"uaf\";\r\n"
+                },
+                {
+                    "date": 1733417241383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n             font-family: \"uaf\";\r\n             font-size: 16px;\r\n             line-height: 140%;\r\n             color: #C4C4C4;\r\n+            padding-right: 24px;\r\n         }\r\n     \r\n         .greenbtn {\r\n     \r\n"
+                },
+                {
+                    "date": 1733417265676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,12 @@\n             padding-right: 24px;\r\n         }\r\n     \r\n         .greenbtn {\r\n-    \r\n+            max-width: 138px;\r\n+            flex: 0 0 138px;\r\n+            width: 100%;\r\n+            height: 42px;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1733417289508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,8 +68,10 @@\n             max-width: 138px;\r\n             flex: 0 0 138px;\r\n             width: 100%;\r\n             height: 42px;\r\n+            font-size: 14px;\r\n+            font-family: \"uaf\";\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1733417297165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,11 @@\n             width: 100%;\r\n             height: 42px;\r\n             font-size: 14px;\r\n             font-family: \"uaf\";\r\n+            display: flex;\r\n+            align-items: center;\r\n+            justify-content: center;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1733417339201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,5 +112,7 @@\n \r\n     .footertitle {\r\n         max-width: 100%;\r\n     }\r\n+\r\n+    // new\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733417352281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,5 +114,9 @@\n         max-width: 100%;\r\n     }\r\n \r\n     // new\r\n+    footer.footer .footer__cooperation {\r\n+        justify-content: flex-start;\r\n+    }\r\n+\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1733417096242,
+            "name": "Commit-0",
+            "content": "footer.footer {\r\n    background: #000;\r\n    padding: 64px 0;\r\n\r\n    p {\r\n        color: #fff;\r\n        font-size: 58px;\r\n        font-family: \"univermag\";\r\n        line-height: 100%;\r\n        margin: 0;\r\n    }\r\n\r\n    ul {\r\n        display: inline-block;\r\n\r\n        li {\r\n            display: inline-block;\r\n            vertical-align: middle;\r\n            margin-right: 12px;\r\n\r\n            &:last-child {\r\n                margin-right: 0;\r\n            }\r\n\r\n            a {\r\n                img {\r\n                    width: 48px;\r\n                    transition: 0.3s;\r\n                }\r\n\r\n                &:hover {\r\n                    img {\r\n                        filter: drop-shadow(2px 4px 6px #84F7A0);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n.footertitle {\r\n    max-width: 100%;\r\n}\r\n\r\nfooter.footer ul {\r\n    position: relative;\r\n    z-index: 6;\r\n}\r\n\r\n// new\r\n.footer__cooperation {\r\n    display: flex;\r\n    \r\n    p {\r\n        margin: 0;\r\n    }\r\n\r\n    .greenbtn {\r\n\r\n    }\r\n}\r\n\r\n@media(max-width:1199.8px) {\r\n    footer.footer {\r\n        padding: 50px 0;\r\n\r\n        p {\r\n            font-size: 46px;\r\n        }\r\n    }\r\n\r\n    .footertitle {\r\n        max-width: 450px;\r\n    }\r\n}\r\n\r\n@media(max-width:991.8px) {\r\n    footer.footer p {\r\n        margin-bottom: 20px;\r\n    }\r\n\r\n    .footertitle {\r\n        margin-bottom: 30px;\r\n    }\r\n}\r\n\r\n@media(max-width:575.8px) {\r\n    footer.footer {\r\n        p {\r\n            font-size: 36px;\r\n        }\r\n    }\r\n\r\n    .footertitle {\r\n        max-width: 100%;\r\n    }\r\n}"
+        }
+    ]
+}

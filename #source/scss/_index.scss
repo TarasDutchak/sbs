@@ -335,7 +335,7 @@
         position: relative;
         display: inline-block;
         z-index: 2;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         font-size: 20px;
         font-weight: 500;
         color: #fff;
@@ -447,7 +447,7 @@
         font-size: 14px;
         line-height: 140%;
         margin-bottom: 8px;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         max-width: 100%;
     }
 
@@ -459,7 +459,7 @@
 
     .titlename {
         font-size: 40px;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         font-weight: 500;
         line-height: 120%;
         text-transform: uppercase;
@@ -515,7 +515,7 @@
 
     .subtitle {
         font-size: 14px;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         font-weight: 300;
         color: #fff;
         margin-bottom: 24px;
@@ -550,7 +550,7 @@
         font-size: 20px;
         line-height: 130%;
         color: #fff;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         font-weight: 600;
         text-transform: uppercase;
     }
@@ -606,7 +606,7 @@
 
         p.title {
             margin-bottom: 8px;
-            font-family: "Unbounded", sans-serif;
+            font-family: "uaf";
             color: #fff;
             font-size: 16px;
             font-weight: 500;
@@ -697,7 +697,7 @@
 
         label {
             margin-bottom: 5px;
-            font-family: "Unbounded", sans-serif;
+            font-family: "uaf";
             font-size: 14px;
             color: var(--dark-grey);
         }
@@ -710,7 +710,7 @@
             width: 100%;
             outline: none;
             color: rgba(245, 245, 245);
-            font-family: "Unbounded", sans-serif;
+            font-family: "uaf";
             font-size: 14px;
             transition: 0.3s;
 
@@ -727,7 +727,7 @@
             width: 100%;
             outline: none;
             color: rgba(245, 245, 245);
-            font-family: "Unbounded", sans-serif;
+            font-family: "uaf";
             font-size: 14px;
             transition: 0.3s;
             resize: none;
@@ -791,7 +791,7 @@
             display: block;
             color: #fff;
             font-size: 14px;
-            font-family: "Unbounded", sans-serif;
+            font-family: "uaf";
             cursor: pointer;
 
             &::after {
@@ -838,7 +838,7 @@ html {
 
 .herosection__info {
     .subtitle {
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         font-size: 20px;
         font-weight: 300;
         max-width: 100%;
@@ -878,7 +878,7 @@ html {
     color: var(--dark-grey);
     font-size: 14px;
     font-weight: 300;
-    font-family: "Unbounded", sans-serif;
+    font-family: "uaf";
     border-bottom: 1px solid var(--dark-grey);
     border-radius: 0;
     position: relative;
@@ -937,7 +937,7 @@ html {
         font-size: 12px;
         font-weight: 300;
         color: var(--light-grey);
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         padding-left: 28px;
         position: relative;
         cursor: pointer;
@@ -1375,7 +1375,7 @@ html {
         margin-bottom: 22px;
         color: rgb(245, 245, 245);
         font-size: 14px;
-        font-family: "ruberoid";
+        font-family: "uaf";
         line-height: 135%;
     }
 
@@ -1385,7 +1385,7 @@ html {
         font-weight: 500;
         padding-right: 30px;
         font-size: 14px;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         line-height: 140%;
     }
 
@@ -1499,7 +1499,7 @@ html {
 
     .select2-container--default .select2-search--inline .select2-search__field {
         color: rgb(135, 135, 135);
-        font-family: "ruberoid";
+        font-family: "uaf";
         height: 20px;
     }
 
@@ -1616,7 +1616,7 @@ html {
         text-transform: uppercase;
         color: #fff;
         padding-left: 32px;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         margin-bottom: 32px;
         cursor: pointer;
 
@@ -1690,7 +1690,7 @@ html {
     .title {
         color: #42795C;
         font-size: 40px;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 40px;
@@ -1730,7 +1730,7 @@ html {
         font-weight: 500;
         line-height: 130%;
         font-size: 14px;
-        font-family: "Unbounded", sans-serif;
+        font-family: "uaf";
         transition: 0.3s;
     }
 
@@ -1862,7 +1862,7 @@ html {
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 130%;
-                font-family: "Unbounded", sans-serif;
+                font-family: "uaf";
                 position: relative;
                 padding-left: 33px;
                 display: block;
@@ -1893,6 +1893,43 @@ html {
     display: none;
 }
 
+// new
+.commander.rd {
+    .commander__infoels {
+        min-height: 520px;
+    }
+
+    .commander__info .commanderimg {
+        right: 0;
+        height: auto;
+    }
+
+    .rdname {
+        position: absolute;
+        right: 59px;
+        bottom: 37px;
+        font-family: "uaf";
+        font-size: 14px;
+        color: #878787;
+        margin: 0;
+    }
+}
+
+.commander__info .titlename {
+    font-family: "uaf";
+}
+
+.commander__info .greenbtn {
+    font-family: "uaf";
+    font-size: 14px;
+    max-width: 138px;
+    height: 42px;
+}
+
+
+
+
+
 @media(max-width:1199.8px) {
     .faqsection__left {
         margin-bottom: 30px;
@@ -1919,6 +1956,26 @@ html {
         max-width: 100%;
     }
 
+    // new
+
+    .commander .rd .commanderimgmob {
+        display: none;
+
+        .commanderimg {
+            display: block;
+        }
+    }
+
+    .commander.rd .rdname {
+        bottom: initial;
+        right: initial;
+        left: 20px;
+        top: 20px;
+    }
+    
+
+
+    // new end
 }
 
 @media(max-width:575.8px) {

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "#source/scss/_fonts.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1733413604556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733413612820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,8 @@\n     font-weight: 400;\r\n }\r\n \r\n @font-face {\r\n-    font-family: \"ruberoid\";\r\n+    font-family: \"uaf\";\r\n     src: url(\"../fonts/volja-regular_w.ttf\") format(\"opentype\");\r\n     font-weight: 400;\r\n }\r\n"
+                },
+                {
+                    "date": 1733415612142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,7 +21,17 @@\n }\r\n \r\n @font-face {\r\n     font-family: \"uaf\";\r\n-    src: url(\"../fonts/volja-regular_w.ttf\") format(\"opentype\");\r\n+    src: url(\"../fonts/UAFSans-Regular.ttf\") format(\"opentype\");\r\n     font-weight: 400;\r\n }\r\n+@font-face {\r\n+    font-family: \"uaf\";\r\n+    src: url(\"../fonts/UAFSans-Medium.ttf\") format(\"opentype\");\r\n+    font-weight: 500;\r\n+}\r\n+@font-face {\r\n+    font-family: \"uaf\";\r\n+    src: url(\"../fonts/UAFSans-Bold.ttf\") format(\"opentype\");\r\n+    font-weight: 400;\r\n+}\r\n"
+                }
+            ],
+            "date": 1733413604556,
+            "name": "Commit-0",
+            "content": "@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');\r\n// font-family: \"Unbounded\", sans-serif;\r\n\r\n\r\n@font-face {\r\n    font-family: \"compact\";\r\n    src: url(\"../fonts/SFCompactDisplay-Regular.otf\") format(\"opentype\");\r\n    font-weight: 400;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"univermag\";\r\n    src: url(\"../fonts/Univermag-Regular.otf\") format(\"opentype\");\r\n    font-weight: 400;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"ruberoid\";\r\n    src: url(\"../fonts/Ruberoid-Regular.ttf\") format(\"opentype\");\r\n    font-weight: 400;\r\n}\r\n\r\n@font-face {\r\n    font-family: \"ruberoid\";\r\n    src: url(\"../fonts/volja-regular_w.ttf\") format(\"opentype\");\r\n    font-weight: 400;\r\n}\r\n"
+        }
+    ]
+}

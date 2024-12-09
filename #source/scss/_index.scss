@@ -1003,8 +1003,13 @@ html {
     }
 }
 
+.capcha {
+    max-width: 200px;
+}
 
-
+.capchawrapper {
+    margin-top: 15px;
+}
 
 
 @media(max-width:1399.8px) {
@@ -1202,6 +1207,28 @@ html {
 
 }
 
+@media(max-width:767.8px) {
+    .finalstfrm {
+        .col-md-6 {
+            &:nth-child(1) {
+                order: 2 !important;
+            }
+
+            &:nth-child(2) {
+                order: 1 !important;
+            }
+        }
+
+        .nextbtn {
+            text-align: left !important;
+        }
+    }
+
+    .capchawrapper {
+        margin-top: 0;
+    }
+}
+
 @media(max-width:575.8px) {
 
     .ideologic .likeh2,
@@ -1341,7 +1368,7 @@ html {
 
     &.active {
         opacity: 1;
-        z-index: 16;
+        z-index: 1056;
         visibility: visible;
     }
 }

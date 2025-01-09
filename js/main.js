@@ -258,9 +258,22 @@ $(document).ready(function () {
 
     // --------------------------
 
+    // підрозділ
 
+    const radioYes = document.getElementById('v1');
+    const radioNo = document.getElementById('v2');
+    const chooseUnitBlock = document.querySelector('.choose-unit');
 
+    function toggleChooseUnit() {
+        if (radioYes.checked) {
+            chooseUnitBlock.classList.add('show');
+        } else {
+            chooseUnitBlock.classList.remove('show');
+        }
+    }
 
+    radioYes.addEventListener('change', toggleChooseUnit);
+    radioNo.addEventListener('change', toggleChooseUnit);
 
 
 });

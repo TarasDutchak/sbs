@@ -2054,3 +2054,12 @@ input[type=number] {
         display: block;
     }
 }
+
+.reserve-officer,
+.permission-to-transfer {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}

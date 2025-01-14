@@ -263,17 +263,30 @@ $(document).ready(function () {
     const radioYes = document.getElementById('v1');
     const radioNo = document.getElementById('v2');
     const chooseUnitBlock = document.querySelector('.choose-unit');
+    const reserveOfficer = document.querySelector(".reserve-officer");
+    const permissionTransfer = document.querySelector(".permission-to-transfer");
+    
 
     function toggleChooseUnit() {
         if (radioYes.checked) {
             chooseUnitBlock.classList.add('show');
+            reserveOfficer.classList.remove("show");
+            permissionTransfer.classList.add('show');
         } else {
             chooseUnitBlock.classList.remove('show');
+            reserveOfficer.classList.add("show");
+            permissionTransfer.classList.remove("show");
         }
+       
+       
     }
 
     radioYes.addEventListener('change', toggleChooseUnit);
     radioNo.addEventListener('change', toggleChooseUnit);
+
+    
+
+
 
 
 });
